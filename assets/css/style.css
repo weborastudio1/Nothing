@@ -1,0 +1,139 @@
+:root {
+  --bg: #050508;
+  --card: #0e0e1a;
+  --text: #f0f0f8;
+  --muted: rgba(240,240,248,0.55);
+  --accent: #00f0ff;
+  --accent2: #7b4dff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Canvas */
+canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+}
+
+/* Cursor */
+#cursor, #cursor-ring {
+  position: fixed;
+  pointer-events: none;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+#cursor {
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+}
+#cursor-ring {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--accent);
+  opacity: 0.6;
+}
+
+/* Navbar */
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+.nav a {
+  color: var(--text);
+  text-decoration: none;
+  margin-left: 24px;
+  opacity: 0.8;
+}
+.nav a:hover { opacity: 1; }
+.nav-btn {
+  padding: 8px 18px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  color: #000 !important;
+}
+
+/* Hero */
+.hero {
+  min-height: 100vh;
+  padding: 160px 60px;
+  position: relative;
+  z-index: 2;
+}
+.hero h1 {
+  font-size: clamp(48px, 7vw, 92px);
+  line-height: 1.05;
+}
+.hero span {
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero p {
+  max-width: 520px;
+  margin-top: 20px;
+  color: var(--muted);
+}
+.hero-actions {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+}
+.btn {
+  padding: 14px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+.primary {
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  color: #000;
+}
+.ghost {
+  border: 1px solid var(--muted);
+  color: var(--text);
+}
+
+/* Footer */
+.footer {
+  padding: 80px 60px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  position: relative;
+  z-index: 2;
+}
+.footer-right a {
+  margin-left: 20px;
+  color: var(--muted);
+  text-decoration: none;
+}
+.copy {
+  display: block;
+  margin-top: 30px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav nav { display: none; }
+  #cursor, #cursor-ring { display: none; }
+}
