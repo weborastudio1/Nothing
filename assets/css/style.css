@@ -198,3 +198,97 @@ canvas {
   background: rgba(255,255,255,0.08);
   color: var(--muted);
 }
+
+/* Contact Page */
+.contact-wrap {
+  padding: 120px 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-info h3 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.contact-info p {
+  color: var(--muted);
+  margin-bottom: 32px;
+  max-width: 420px;
+}
+
+.contact-info ul {
+  list-style: none;
+  display: grid;
+  gap: 20px;
+}
+
+.contact-info li {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.contact-info strong {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.contact-form {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 40px;
+  border-radius: 24px;
+  backdrop-filter: blur(10px);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.field label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 6px;
+  color: var(--muted);
+}
+
+.field input,
+.field textarea,
+.field select {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 14px 16px;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+}
+
+.field textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.field input:focus,
+.field textarea:focus,
+.field select:focus {
+  border-color: var(--accent);
+}
+
+@media (max-width: 900px) {
+  .contact-wrap {
+    grid-template-columns: 1fr;
+    padding: 80px 32px;
+  }
+}
