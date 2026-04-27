@@ -327,7 +327,7 @@ img {
   position: relative;
   overflow: hidden;
 
-  transition: background-image 1s ease-in-out;
+  transition: background-image 1s ease-in-out, opacity 0.8s ease-in-out;
   animation: zoomBg 12s ease-in-out infinite alternate;
 }
 
