@@ -268,7 +268,9 @@ window.addEventListener('load', function() {
 const heroImages = [
   "images/hero-home.jpg",
   "images/hero-home1.png",
-  "images/hero-home2.png"
+  "images/hero-home2.png", 
+    "images/hero-home3.png", 
+    "images/hero-home4.png"
 ];
 
 let currentIndex = 0;
