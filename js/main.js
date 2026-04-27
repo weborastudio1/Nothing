@@ -277,7 +277,22 @@ const heroImages = [
 
 let index = 0;
 
+// FIRST LOAD cinematic
+window.addEventListener("load", () => {
+  hero.style.opacity = "0";
+  setTimeout(() => {
+    hero.style.opacity = "1";
+  }, 300);
+});
+
+// AUTO SLIDER with FADE
 setInterval(() => {
-  hero.style.backgroundImage = `url(${heroImages[index]})`;
-  index = (index + 1) % heroImages.length;
+  hero.classList.add("fade");
+
+  setTimeout(() => {
+    hero.style.backgroundImage = `url(${heroImages[index]})`;
+    hero.classList.remove("fade");
+    index = (index + 1) % heroImages.length;
+  }, 700);
+
 }, 4000);
