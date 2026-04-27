@@ -1763,3 +1763,15 @@ img {
         right: -10px;
     }
 }
+
+/* Smooth background image change */
+.hero {
+  transition: background-image 1.5s ease-in-out;
+}
+
+/* Mobile height fix */
+@media (max-width: 768px) {
+  .hero {
+    height: 80vh;
+  }
+}
