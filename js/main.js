@@ -265,6 +265,8 @@ window.addEventListener('load', function() {
 
 
 
+const hero = document.querySelector(".hero");
+
 const heroImages = [
   "images/hero-home.jpg",
   "images/hero-home1.png",
@@ -273,31 +275,9 @@ const heroImages = [
     "images/hero-home4.png"
 ];
 
-let currentIndex = 0;
-const heroImg = document.getElementById("heroImg");
+let index = 0;
 
-// Show image
-function showSlide(index) {
-  heroImg.style.opacity = "0";
-  setTimeout(() => {
-    heroImg.src = heroImages[index];
-    heroImg.style.opacity = "1";
-  }, 300);
-}
-
-// Next button
-function nextSlide() {
-  currentIndex = (currentIndex + 1) % heroImages.length;
-  showSlide(currentIndex);
-}
-
-// Prev button
-function prevSlide() {
-  currentIndex = (currentIndex - 1 + heroImages.length) % heroImages.length;
-  showSlide(currentIndex);
-}
-
-// Auto slide every 2 seconds
 setInterval(() => {
-  nextSlide();
-}, 2000);
+  hero.style.backgroundImage = `url(${heroImages[index]})`;
+  index = (index + 1) % heroImages.length;
+}, 4000);
