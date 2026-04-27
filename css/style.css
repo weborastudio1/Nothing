@@ -340,15 +340,6 @@ img {
   color: #00c2d1;
 }
 
-.hero-text {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
 
  ==========================================
    SECTIONS
@@ -1708,8 +1699,8 @@ img {
 @media (max-width: 768px) {
   .hero {
     height: auto;              /* fixed height hatao */
-    min-height: 70vh;          /* decent hero height */
-    padding: 80px 20px;        /* text ko space mile */
+    min-height: unset;          /* decent hero height */
+    padding: 0;        /* text ko space mile */
 
     background-size: contain;  /* 🔥 FULL IMAGE VISIBLE */
     background-position: center top;
