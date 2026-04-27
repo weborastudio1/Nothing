@@ -262,3 +262,40 @@ window.addEventListener('load', function() {
         }, 500);
     }
 });
+
+
+
+const heroImages = [
+  "images/hero-1.jpg",
+  "images/hero-2.jpg",
+  "images/hero-3.jpg"
+];
+
+let currentIndex = 0;
+const heroImg = document.getElementById("heroImg");
+
+// Show image
+function showSlide(index) {
+  heroImg.style.opacity = "0";
+  setTimeout(() => {
+    heroImg.src = heroImages[index];
+    heroImg.style.opacity = "1";
+  }, 300);
+}
+
+// Next button
+function nextSlide() {
+  currentIndex = (currentIndex + 1) % heroImages.length;
+  showSlide(currentIndex);
+}
+
+// Prev button
+function prevSlide() {
+  currentIndex = (currentIndex - 1 + heroImages.length) % heroImages.length;
+  showSlide(currentIndex);
+}
+
+// Auto slide every 2 seconds
+setInterval(() => {
+  nextSlide();
+}, 2000);
