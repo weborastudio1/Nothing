@@ -1712,10 +1712,18 @@ img {
   transition: background-image 1.5s ease-in-out;
 }
 
-/* Mobile height fix */
+/* ===== MOBILE HERO IMAGE FIX ===== */
 @media (max-width: 768px) {
   .hero {
-    height: 80vh;
+    height: auto;              /* fixed height hatao */
+    min-height: 70vh;          /* decent hero height */
+    padding: 80px 20px;        /* text ko space mile */
+
+    background-size: contain;  /* 🔥 FULL IMAGE VISIBLE */
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    animation: none;           /* zoom OFF */
   }
 }
 
