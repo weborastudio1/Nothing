@@ -328,6 +328,7 @@ img {
   overflow: hidden;
 
   transition: background-image 1s ease-in-out;
+  animation: zoomBg 12s ease-in-out infinite alternate;
 }
 
 
@@ -357,29 +358,7 @@ img {
 
 
 
-/* Slider buttons */
-.slider-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #1bbfdc;
-  color: #fff;
-  border: none;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.slider-btn.prev { left: 12px; }
-.slider-btn.next { right: 12px; }
-
-.slider-btn:hover {
-  background: #14a8c2;
-}
-
-/* ==========================================
+ ==========================================
    SECTIONS
    ========================================== */
 .section-header {
@@ -1737,5 +1716,15 @@ img {
 @media (max-width: 768px) {
   .hero {
     height: 80vh;
+  }
+}
+
+/* ===== HERO BACKGROUND ZOOM ===== */
+@keyframes zoomBg {
+  from {
+    background-size: 110%;
+  }
+  to {
+    background-size: 120%;
   }
 }
