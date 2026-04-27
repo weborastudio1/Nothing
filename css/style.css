@@ -455,7 +455,7 @@ img {
    ========================================== */
 .services-section {
     padding: 80px 0;
-    background: var(--white);
+    background: linear-gradient(135deg, #e8f4f8 0%, #f0f9ff 100%);
 }
 
 .services-grid {
