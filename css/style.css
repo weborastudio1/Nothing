@@ -1719,6 +1719,14 @@ img {
   }
 }
 
+/* Disable zoom on mobile */
+@media (max-width: 768px) {
+  .hero {
+    animation: none;
+    background-size: cover;
+  }
+}
+
 /* Fade effect */
 .hero.fade {
   opacity: 0;
