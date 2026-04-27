@@ -359,13 +359,9 @@ img {
 }
 
 .hero-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 60px;
+  position: relative;
+  z-index: 2;
+  color: #00c2d1;
 }
 
 .hero-text {
