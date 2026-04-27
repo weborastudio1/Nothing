@@ -318,7 +318,7 @@ img {
       rgba(0,0,0,0.6),
       rgba(0,0,0,0.6)
     ),
-    url("../images/hero-home.jpg");
+    url("images/hero-home.jpg");
   background-size: cover;
   background-position: center;
 }
