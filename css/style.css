@@ -379,13 +379,36 @@ img {
 }
 
 .hero-image {
-    flex: 1;
-    max-width: 500px;
+  position: relative;
+  max-width: 100%;
 }
 
 .hero-image img {
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
+  width: 100%;
+  border-radius: 14px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Slider buttons */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #1bbfdc;
+  color: #fff;
+  border: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.slider-btn.prev { left: 12px; }
+.slider-btn.next { right: 12px; }
+
+.slider-btn:hover {
+  background: #14a8c2;
 }
 
 /* ==========================================
