@@ -313,16 +313,18 @@ img {
    HERO SECTION
    ========================================== */
 .hero {
-  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 
   background-image: url("../images/hero-1.jpg");
-  background-size: 110%;
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  aspect-ratio: 16 / 9;   /* 🔥 IMAGE JITNA HI HERO */
+  width: 100%;
 
   position: relative;
   overflow: hidden;
