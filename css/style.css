@@ -329,34 +329,7 @@ img {
 
   transition: background-image 1s ease-in-out;
 }
-.slider-arrow {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background: var(--primary-color);
-    color: var(--white);
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10;
-    transition: var(--transition);
-}
 
-.slider-arrow:hover {
-    background: var(--primary-dark);
-    transform: scale(1.1);
-}
-
-.slider-arrow.prev {
-    left: 20px;
-}
-
-.slider-arrow.next {
-    right: 20px;
-}
 
 .hero-content {
   position: relative;
