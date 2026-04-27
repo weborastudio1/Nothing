@@ -340,24 +340,6 @@ img {
   color: #00c2d1;
 }
 
-.hero-text {
-    flex: 1;
-}
-
-.hero-text h1 {
-    font-size: 42px;
-    font-weight: 800;
-    color: var(--primary-color);
-    line-height: 1.2;
-    margin-bottom: 20px;
-}
-
-.hero-text p {
-    font-size: 16px;
-    color: var(--text-light);
-    line-height: 1.8;
-}
-
 
 
  ==========================================
