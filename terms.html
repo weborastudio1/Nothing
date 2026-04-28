@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WEBORA Studioz – Terms & Conditions</title>
+  <meta name="description" content="Terms and Conditions for using WEBORA Studioz website and services. Read our legal policies and user agreements." />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Terms Page Specific Styles */
+    .terms-hero {
+      position: relative;
+      overflow: hidden;
+      min-height: 280px;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(135deg, #c4ebf5 0%, #d8f3fa 40%, #e4f8fd 70%, #b8e5f5 100%);
+    }
+
+    .terms-hero-inner {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 50px 20px;
+      width: 100%;
+    }
+
+    .terms-hero-inner h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(32px, 5vw, 56px);
+      font-weight: 900;
+      color: var(--blue);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      line-height: 1.08;
+      margin-bottom: 16px;
+    }
+
+    .terms-hero-inner p {
+      font-size: 15px;
+      color: var(--navy2);
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.7;
+      font-weight: 500;
+    }
+
+    .terms-body {
+      background: var(--bg);
+      padding: 70px 40px;
+    }
+
+    .terms-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      background: var(--white);
+      border-radius: var(--card-radius);
+      border: 1.5px solid var(--border);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .terms-header {
+      background: linear-gradient(135deg, var(--blue) 0%, var(--blue-d) 100%);
+      padding: 30px 40px;
+      text-align: center;
+    }
+
+    .terms-header h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .terms-header p {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .terms-header .last-updated {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 4px 12px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    .terms-content {
+      padding: 40px;
+    }
+
+    .terms-section {
+      margin-bottom: 32px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .terms-section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .terms-section h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--navy);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .terms-section h3 .section-num {
+      width: 32px;
+      height: 32px;
+      background: var(--blue-light);
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      color: var(--blue);
+    }
+
+    .terms-section p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--text);
+      margin-bottom: 14px;
+    }
+
+    .terms-section p:last-child {
+      margin-bottom: 0;
+    }
+
+    .terms-section ul {
+      list-style: disc;
+      margin-left: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .terms-section li {
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .highlight {
+      color: var(--blue);
+      font-weight: 600;
+    }
+
+    .warning-box {
+      background: #fff3e0;
+      border-left: 4px solid #ff9800;
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+
+    .warning-box p {
+      margin-bottom: 0;
+      font-size: 14px;
+      color: #e65100;
+    }
+
+    .terms-footer {
+      background: var(--navy2);
+      padding: 24px 40px;
+      text-align: center;
+    }
+
+    .terms-footer p {
+      font-size: 13px;
+      color: #7ba8bc;
+      margin-bottom: 8px;
+    }
+
+    .terms-footer a {
+      color: var(--blue);
+      text-decoration: underline;
+    }
+
+    .terms-footer a:hover {
+      color: var(--blue-d);
+    }
+
+    @media (max-width: 680px) {
+      .terms-body { padding: 40px 18px; }
+      .terms-content { padding: 24px; }
+      .terms-header { padding: 20px; }
+      .terms-header h2 { font-size: 20px; }
+      .terms-section h3 { font-size: 18px; }
+      .terms-section p, .terms-section li { font-size: 14px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div id="topbar">
+  <span class="topbar-left">Welcome To WEBORA</span>
+  <div class="topbar-right">
+    <a href="mailto:weborasupport1@gmail.com">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+      weborasupport1@gmail.com
+    </a>
+    <a href="mailto:weborastudioz@gmail.com">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+      weborastudioz@gmail.com
+    </a>
+    <a href="tel:+6266421634">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-15.74-15.74A2 2 0 0 1 6.09 4h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6.29 6.29l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+      +6266421634
+    </a>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a class="nav-logo" href="index.html">
+    <div class="nav-logo-icon">
+      <svg viewBox="0 0 32 32" fill="none"><path d="M4 8l8 14 5-8 5 8 8-14" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <span class="nav-logo-text">WEBORA</span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html">HOME</a>
+    <a href="services.html">SERVICES</a>
+    <a href="index.html#services">PORTFOLIO</a>
+    <a href="index.html#testimonials">ABOUT</a>
+    <a href="contact.html">CONTACT</a>
+  </div>
+  <div class="nav-actions">
+    <a href="contact.html" class="btn btn-primary">GET STARTED</a>
+    <a href="contact.html" class="btn btn-outline">CONTACT</a>
+  </div>
+  <button class="hamburger" id="ham-btn" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div id="mobile-menu">
+  <div class="mobile-menu-head">
+    <div class="nav-logo">
+      <div class="nav-logo-icon"><svg viewBox="0 0 32 32" fill="none"><path d="M4 8l8 14 5-8 5 8 8-14" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <span class="nav-logo-text" style="color:#fff">WEBORA</span>
+    </div>
+    <button class="mobile-close" id="mob-close">✕</button>
+  </div>
+  <div class="mobile-links">
+    <a href="index.html">HOME</a>
+    <a href="services.html">SERVICES</a>
+    <a href="index.html#services">PORTFOLIO</a>
+    <a href="index.html#testimonials">ABOUT</a>
+    <a href="contact.html">CONTACT</a>
+  </div>
+  <div class="mobile-actions">
+    <a href="contact.html" class="btn btn-primary btn-lg">GET STARTED</a>
+    <a href="contact.html" class="btn btn-white btn-lg">CONTACT US</a>
+  </div>
+</div>
+
+<!-- TERMS HERO -->
+<section class="terms-hero">
+  <div class="terms-hero-inner">
+    <h1>Terms & Conditions</h1>
+    <p>Please read these terms carefully before using our website and services.</p>
+  </div>
+</section>
+
+<!-- TERMS CONTENT -->
+<div class="terms-body">
+  <div class="terms-container">
+    <div class="terms-header">
+      <h2>WEBORA Studioz - Terms of Use</h2>
+      <p>Legal Agreement Between You and WEBORA Studioz</p>
+      <span class="last-updated">Last Updated: April 28, 2026</span>
+    </div>
+    
+    <div class="terms-content">
+      
+      <!-- Section 1 -->
+      <div class="terms-section">
+        <h3><span class="section-num">1</span> Acceptance of Terms</h3>
+        <p>By using the <span class="highlight">WEBORA Studioz</span> website, including any software and content contained therein, you agree that use of the website is entirely at your own risk. The website is provided to you as a convenience to provide general information about the services available from <span class="highlight">WEBORA Studioz</span>, but we do not guarantee the accuracy, or completeness of the information. The website is provided <strong>"AS IS"</strong>, without warranty of any kind, either express or implied.</p>
+      </div>
+      
+      <!-- Section 2 -->
+      <div class="terms-section">
+        <h3><span class="section-num">2</span> Limitation of Liability</h3>
+        <p>Neither <span class="highlight">WEBORA Studioz</span> nor any of its employees, agents, successors, assigns, affiliates, or content or service providers shall be liable to you or other third party for any direct, indirect, incidental, special or consequential damages arising out of use of the website or inability to gain access to or use the website or out of any breach of any warranty.</p>
+        <div class="warning-box">
+          <p>⚠️ <strong>Disclaimer:</strong> WEBORA Studioz shall not be responsible for any loss, damage, or inconvenience arising from the use of our website or services.</p>
+        </div>
+      </div>
+      
+      <!-- Section 3 -->
+      <div class="terms-section">
+        <h3><span class="section-num">3</span> Intellectual Property Rights</h3>
+        <p><span class="highlight">WEBORA Studioz</span>, or one of its customers, clients or affiliates, is the owner and/or authorized user of any trademark, registered trademark and/or service mark appearing on the website, and is the copyright owner or licensee of the content and/or information on the website, unless otherwise indicated.</p>
+        <p><span class="highlight">WEBORA Studioz</span> does not grant to you a license to any content, features or materials you may access on the website. You may not download or save a copy of any of the content or screens except as otherwise provided in these Terms and Conditions, for any purpose. You may, however, print a copy of the information on the website solely for your personal use or records.</p>
+        <p>If you make other use of the website, except as otherwise provided above, you may violate copyright and other laws of India, other countries, as well as applicable state laws and may be subject to liability for such unauthorized use. We do not grant any license or other authorization to any user of its trademarks, registered trademarks, service marks, other copyrightable material or any other intellectual property, by including them on the website.</p>
+      </div>
+      
+      <!-- Section 4 -->
+      <div class="terms-section">
+        <h3><span class="section-num">4</span> Third-Party Trademarks</h3>
+        <p>All the trade names, trademarks, logos or service marks displayed on the website belong to their respective owners. <span class="highlight">WEBORA Studioz</span> respects the intellectual property rights of others and expects users to do the same.</p>
+      </div>
+      
+      <!-- Section 5 -->
+      <div class="terms-section">
+        <h3><span class="section-num">5</span> Right to Modify</h3>
+        <p>We reserve the right to change any information on the website, including but not limited to revising and/or deleting features or other information without prior notice to you. Accessing certain links within the website may provide you with access to other websites for which we assume no responsibility of any kind for the content, availability or otherwise. The content of the website may vary depending upon your browser functionality and limitations.</p>
+      </div>
+      
+      <!-- Section 6 -->
+      <div class="terms-section">
+        <h3><span class="section-num">6</span> External Links</h3>
+        <p>Our website may contain links to external websites that are not operated by us. Please be aware that we have no control over the content and practices of these sites, and cannot accept responsibility or liability for their respective privacy policies or terms of service.</p>
+      </div>
+      
+      <!-- Section 7 -->
+      <div class="terms-section">
+        <h3><span class="section-num">7</span> Governing Law</h3>
+        <p>These terms and conditions are governed by and construed in accordance with the laws of <span class="highlight">India</span>. Any dispute arising under these terms shall be subject to the exclusive jurisdiction of the courts located in <span class="highlight">India</span>.</p>
+      </div>
+      
+      <!-- Section 8 -->
+      <div class="terms-section">
+        <h3><span class="section-num">8</span> Contact Information</h3>
+        <p>If you have any questions about these Terms & Conditions, please contact us at:</p>
+        <ul>
+          <li><strong>Email:</strong> weborasupport1@gmail.com</li>
+          <li><strong>WhatsApp:</strong> +6266421834</li>
+          <li><strong>Address:</strong> WEBORA Studioz, Digital Agency</li>
+        </ul>
+      </div>
+      
+    </div>
+    
+    <div class="terms-footer">
+      <p>By continuing to use our website, you acknowledge that you have read, understood, and agree to be bound by these Terms & Conditions.</p>
+      <p>© 2024 <span class="highlight">WEBORA Studioz</span>. All Rights Reserved.</p>
+      <p><a href="index.html">← Back to Home</a> | <a href="contact.html">Contact Us</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid container">
+    <div>
+      <div class="f-logo">
+        <div class="f-logo-icon"><svg viewBox="0 0 32 32" width="22" height="22" fill="none"><path d="M4 8l8 14 5-8 5 8 8-14" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <span class="f-logo-text">WEBORA</span>
+      </div>
+      <p class="footer-brand">Your Vision, Our Expertise. From Concept to Code. Building premium digital experiences for clients worldwide.</p>
+      <div class="footer-socials">
+        <a href="#">f</a>
+        <a href="#">𝕏</a>
+        <a href="#">in</a>
+        <a href="#">ig</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html">All Services</a></li>
+        <li><a href="services.html">Web Development</a></li>
+        <li><a href="services.html">UI/UX Design</a></li>
+        <li><a href="services.html">Branding</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>About</h4>
+      <ul>
+        <li><a href="index.html#testimonials">Testimonials</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="index.html#services">Portfolio</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Details</h4>
+      <div class="footer-contact-row">
+        <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+        <span>weborastudiozz@gmail.com</span>
+      </div>
+      <div class="footer-contact-row">
+        <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+        <span>weborasupport1@gmail.com</span>
+      </div>
+      <div class="footer-contact-row">
+        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-15.74-15.74A2 2 0 0 1 6.09 4h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6.29 6.29l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+        <span>+6266421834</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    Copyright © 2024 WEBORA Studioz. All Rights Reserved. | <a href="terms.html" style="color: var(--blue);">Terms & Conditions</a>
+  </div>
+</footer>
+
+<!-- CHAT WIDGET -->
+<div class="chat-widget">
+  <div class="chat-popup" id="chat-popup">
+    <div class="chat-popup-ic"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+    Hello! How can we help you today?
+  </div>
+  <button class="chat-fab" id="chat-btn" aria-label="Open chat">
+    <div class="chat-badge">WE'RE HERE</div>
+    <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+  </button>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
