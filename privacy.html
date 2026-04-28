@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WEBORA Studioz – Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for WEBORA Studioz website. Learn how we collect, use, and protect your personal information." />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Privacy Policy Page Specific Styles */
+    .privacy-hero {
+      position: relative;
+      overflow: hidden;
+      min-height: 280px;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(135deg, #c4ebf5 0%, #d8f3fa 40%, #e4f8fd 70%, #b8e5f5 100%);
+    }
+
+    .privacy-hero-inner {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 50px 20px;
+      width: 100%;
+    }
+
+    .privacy-hero-inner h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(32px, 5vw, 56px);
+      font-weight: 900;
+      color: var(--blue);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      line-height: 1.08;
+      margin-bottom: 16px;
+    }
+
+    .privacy-hero-inner p {
+      font-size: 15px;
+      color: var(--navy2);
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.7;
+      font-weight: 500;
+    }
+
+    .privacy-body {
+      background: var(--bg);
+      padding: 70px 40px;
+    }
+
+    .privacy-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      background: var(--white);
+      border-radius: var(--card-radius);
+      border: 1.5px solid var(--border);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .privacy-header {
+      background: linear-gradient(135deg, var(--blue) 0%, var(--blue-d) 100%);
+      padding: 30px 40px;
+      text-align: center;
+    }
+
+    .privacy-header h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .privacy-header p {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .privacy-header .last-updated {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 4px 12px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    .privacy-content {
+      padding: 40px;
+    }
+
+    .privacy-section {
+      margin-bottom: 32px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .privacy-section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .privacy-section h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--navy);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .privacy-section h3 .section-num {
+      width: 32px;
+      height: 32px;
+      background: var(--blue-light);
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      color: var(--blue);
+    }
+
+    .privacy-section p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--text);
+      margin-bottom: 14px;
+    }
+
+    .privacy-section p:last-child {
+      margin-bottom: 0;
+    }
+
+    .privacy-section ul {
+      list-style: disc;
+      margin-left: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .privacy-section li {
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .privacy-section li strong {
+      color: var(--blue);
+    }
+
+    .highlight {
+      color: var(--blue);
+      font-weight: 600;
+    }
+
+    .warning-box {
+      background: #fff3e0;
+      border-left: 4px solid #ff9800;
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+
+    .warning-box p {
+      margin-bottom: 0;
+      font-size: 14px;
+      color: #e65100;
+    }
+
+    .info-box {
+      background: #e6f9fc;
+      border-left: 4px solid var(--blue);
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+
+    .info-box p {
+      margin-bottom: 0;
+      font-size: 14px;
+      color: var(--navy);
+    }
+
+    .privacy-footer {
+      background: var(--navy2);
+      padding: 24px 40px;
+      text-align: center;
+    }
+
+    .privacy-footer p {
+      font-size: 13px;
+      color: #7ba8bc;
+      margin-bottom: 8px;
+    }
+
+    .privacy-footer a {
+      color: var(--blue);
+      text-decoration: underline;
+    }
+
+    .privacy-footer a:hover {
+      color: var(--blue-d);
+    }
+
+    .two-column {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 15px;
+    }
+
+    @media (max-width: 680px) {
+      .privacy-body { padding: 40px 18px; }
+      .privacy-content { padding: 24px; }
+      .privacy-header { padding: 20px; }
+      .privacy-header h2 { font-size: 20px; }
+      .privacy-section h3 { font-size: 18px; }
+      .privacy-section p, .privacy-section li { font-size: 14px; }
+      .two-column { grid-template-columns: 1fr; gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div id="topbar">
+  <span class="topbar-left">Welcome To WEBORA</span>
+  <div class="topbar-right">
+    <a href="mailto:weborasupport1@gmail.com">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+      weborasupport1@gmail.com
+    </a>
+    <a href="mailto:weborastudioz@gmail.com">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+      weborastudioz@gmail.com
+    </a>
+    <a href="tel:+6266421634">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-15.74-15.74A2 2 0 0 1 6.09 4h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6.29 6.29l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+      +6266421634
+    </a>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a class="nav-logo" href="index.html">
+    <div class="nav-logo-icon">
+      <svg viewBox="0 0 32 32" fill="none"><path d="M4 8l8 14 5-8 5 8 8-14" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <span class="nav-logo-text">WEBORA</span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html">HOME</a>
+    <a href="services.html">SERVICES</a>
+    <a href="index.html#services">PORTFOLIO</a>
+    <a href="index.html#testimonials">ABOUT</a>
+    <a href="contact.html">CONTACT</a>
+  </div>
+  <div class="nav-actions">
+    <a href="contact.html" class="btn btn-primary">GET STARTED</a>
+    <a href="contact.html" class="btn btn-outline">CONTACT</a>
+  </div>
+  <button class="hamburger" id="ham-btn" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div id="mobile-menu">
+  <div class="mobile-menu-head">
+    <div class="nav-logo">
+      <div class="nav-logo-icon"><svg viewBox="0 0 32 32" fill="none"><path d="M4 8l8 14 5-8 5 8 8-14" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <span class="nav-logo-text" style="color:#fff">WEBORA</span>
+    </div>
+    <button class="mobile-close" id="mob-close">✕</button>
+  </div>
+  <div class="mobile-links">
+    <a href="index.html">HOME</a>
+    <a href="services.html">SERVICES</a>
+    <a href="index.html#services">PORTFOLIO</a>
+    <a href="index.html#testimonials">ABOUT</a>
+    <a href="contact.html">CONTACT</a>
+  </div>
+  <div class="mobile-actions">
+    <a href="contact.html" class="btn btn-primary btn-lg">GET STARTED</a>
+    <a href="contact.html" class="btn btn-white btn-lg">CONTACT US</a>
+  </div>
+</div>
+
+<!-- PRIVACY HERO -->
+<section class="privacy-hero">
+  <div class="privacy-hero-inner">
+    <h1>Privacy Policy</h1>
+    <p>Your privacy matters to us. Read our privacy practices and how we protect your information.</p>
+  </div>
+</section>
+
+<!-- PRIVACY CONTENT -->
+<div class="privacy-body">
+  <div class="privacy-container">
+    <div class="privacy-header">
+      <h2>WEBORA Studioz - Privacy Policy</h2>
+      <p>Your Privacy Rights and Our Practices</p>
+      <span class="last-updated">Last Updated: April 28, 2026</span>
+    </div>
+    
+    <div class="privacy-content">
+      
+      <!-- Section 1 - Introduction -->
+      <div class="privacy-section">
+        <h3><span class="section-num">1</span> Acceptance of Privacy Policy</h3>
+        <p>Please read the following terms and conditions of use (the <strong>"Terms and Conditions"</strong>) which govern your use of the website located at <span class="highlight">www.webora.com</span> (referred to herein as the <strong>"website"</strong>) and your relationship with <span class="highlight">WEBORA Studioz</span>, and all individuals and companies associated with this website. If you do not agree to these Terms and Conditions, do not use the website. We may change the Terms and Conditions from time to time and at any time without notice to you, by posting such changes on the website. By using the website following any modifications to these Terms and Conditions, you agree to be bound by any such modifications to the Terms and Conditions.</p>
+        <div class="info-box">
+          <p>📌 Use of the website constitutes your acceptance of the Terms and Conditions.</p>
+        </div>
+      </div>
+      
+      <!-- Section 2 - Website Development Terms -->
+      <div class="privacy-section">
+        <h3><span class="section-num">2</span> Website Development Terms & Conditions</h3>
+        <ul>
+          <li>We will deliver the website development work according to the contract and features which we mutually agreed.</li>
+          <li>For any additional task which is not discussed in the work scope, client have to pay for new requirements and as per the requirement we will define new work scope.</li>
+          <li>If client is not responding or not giving the feedback up to 48 hours then we will put project on hold temporarily. We will restart the project according to slot availability. In case client is not responding for up to 15 days then we will charge project restart cost too.</li>
+          <li>We will upload website on client's server only after 100% payment.</li>
+          <li>After the delivery of project we are offering 30 days maintenance. After that client have to take paid AMC service.</li>
+          <li>We are keeping website back up for up to 6 months after the delivery of project. After that if client is asking for back up then we can provide as per the availability and that will be chargeable.</li>
+        </ul>
+      </div>
+      
+      <!-- Section 3 - SEO Service Terms -->
+      <div class="privacy-section">
+        <h3><span class="section-num">3</span> SEO Service Terms & Conditions</h3>
+        <ul>
+          <li><span class="highlight">WEBORA Studioz</span> will provide Client with Search Engine Optimization Services as described in this contract.</li>
+          <li><span class="highlight">WEBORA Studioz</span> will use specific keywords and/or phrases to improve the search engine ranking of, and/or position the contents of the Client's website.</li>
+          <li>Our payment terms for SEO service is upfront monthly.</li>
+          <li>All invoices must be paid within 7 days of billing. In case delay in payments we can put work on hold without any notice and in this case we will not responsible for any ranking and traffic loss.</li>
+          <li>We are by default giving the results in Google Search. In case any client wants results in any other search engine then client must have to discuss and take the written proposal from us.</li>
+          <li><span class="highlight">WEBORA Studioz</span> is not responsible for changes made to the website by other parties that adversely affect the search engine rankings of the Client's website.</li>
+        </ul>
+        
+        <div class="warning-box">
+          <p>⚠️ <strong>Important SEO Disclaimers:</strong></p>
+          <ul style="margin-top: 8px;">
+            <li>All fees are non-refundable.</li>
+            <li>All fees, services, documents, recommendations, and reports are confidential.</li>
+            <li><span class="highlight">WEBORA Studioz</span> has no control over the policies of search engines with respect to the type of sites and/or content that they accept now or in the future. The Client's website may be excluded from any directory or search engine at any time at the sole discretion of the search engine or directory.</li>
+            <li>Due to the competitiveness of some keywords/phrases, ongoing changes in search engine ranking algorithms, and other competitive factors, we never giving the guarantee #1 positions or consistent top 10 positions for any particular keyword, phrase, or search term.</li>
+            <li>Before starting the project client have to make sure that all the contents are unique in website. Otherwise there will be additional charges for the contents which is not covered in SEO cost.</li>
+            <li>There will be no development task included in the SEO on page optimization work.</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Section 4 - User Conduct -->
+      <div class="privacy-section">
+        <h3><span class="section-num">4</span> User Conduct on the Website</h3>
+        <p><strong>While using the website, you may NOT:</strong></p>
+        <div class="two-column">
+          <ul>
+            <li>Upload, post, publish, transmit, reproduce, or distribute in any way, information, software or other material obtained through the website which is protected by copyright, or other proprietary or intellectual property right, or derivative works with respect thereto, without obtaining permission of the copyright owner or right holder.</li>
+            <li>Upload, post, publish or transmit any unlawful, fraudulent, libellous, defamatory, obscene, pornographic, profane, threatening, abusive, or otherwise objectionable information of any kind.</li>
+            <li>Upload, post, publish, transmit, reproduce, distribute or in any way exploit any information, software or other material obtained through the website for commercial purposes (other than as expressly permitted).</li>
+          </ul>
+          <ul>
+            <li>Restrict or inhibit any other user from using and enjoying the website.</li>
+            <li>Post or transmit any advertisements, solicitations, chain letters, pyramid schemes, investment opportunities or schemes or other unsolicited commercial communication (except as otherwise expressly permitted by the website) or engage in spamming or flooding.</li>
+            <li>Post or transmit any information or software which contains a virus, Trojan horse, worm or other harmful component.</li>
+          </ul>
+        </div>
+        <p>We have no obligation to monitor the website. You acknowledge and agree, however, that we do retain the right to monitor the website and to disclose any information as necessary or appropriate to satisfy any law, regulation or other governmental request, to operate the website properly, or to protect itself or its subscribers. We will not intentionally monitor or disclose any private electronic-mail message unless required by law. We reserve the right to refuse to post or remove any information or materials, in whole or in part, that, in its sole discretion, are unacceptable, undesirable, inappropriate or in violation of these Terms and Conditions.</p>
+      </div>
+      
+      <!-- Section 5 - Submissions -->
+      <div class="privacy-section">
+        <h3><span class="section-num">5</span> Submissions</h3>
+        <p>All information submitted to the website, including but not limited to that which is included in any employment inquiries, shall be deemed and remain the property of <span class="highlight">WEBORA Studioz</span>, and we shall be free to use, for any purpose, any and all such information or materials which any user provides to the website. We shall not be subject to any obligations of confidentiality regarding submitted information.</p>
+      </div>
+      
+      <!-- Section 6 - Links From and To Website -->
+      <div class="privacy-section">
+        <h3><span class="section-num">6</span> Links From And To The Website</h3>
+        <p>You acknowledge and agree that <span class="highlight">WEBORA Studioz</span> and any of its business affiliates or customers have no responsibility for the accuracy or availability of information provided by linked websites. Links to external websites do not constitute an endorsement by <span class="highlight">WEBORA Studioz</span> or its business affiliates or customers of the sponsors of such sites or the content, products, advertising or other materials presented on such sites. We do not authorize, edit, or monitor these unofficial pages or links. You acknowledge and agree that we are not responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on such external sites or resources.</p>
+      </div>
+      
+      <!-- Section 7 - Indemnification -->
+      <div class="privacy-section">
+        <h3><span class="section-num">7</span> Indemnification</h3>
+        <p>You agree to defend, indemnify and hold <span class="highlight">WEBORA Studioz</span> and its affiliates harmless from any and all claims, liabilities, costs and expenses, including reasonable attorneys' fees, arising in any way from your use of the website or the placement or transmission of any message, information, software or other materials through the website by you or users of your account or related to any violation of these Terms and Conditions.</p>
+      </div>
+      
+      <!-- Section 8 - Contact Information -->
+      <div class="privacy-section">
+        <h3><span class="section-num">8</span> Contact Information</h3>
+        <p>If you have any questions about this Privacy Policy or our Terms & Conditions, please contact us at:</p>
+        <ul>
+          <li><strong>Email:</strong> weborasupport1@gmail.com</li>
+          <li><strong>WhatsApp:</strong> +6266421834</li>
+          <li><strong>Website:</strong> www.webora.com</li>
+        </ul>
+      </div>
+      
+    </div>
+    
+    <div class="privacy-footer">
+      <p>By continuing to use our website, you acknowledge that you have read, understood, and agree to be bound by this Privacy Policy and our Terms & Conditions.</p>
+      <p>© 2024 <span class="highlight">WEBORA Studioz</span>. All Rights Reserved.</p>
+      <p><a href="index.html">← Back to Home</a> | <a href="terms.html">Terms & Conditions</a> | <a href="contact.html">Contact Us</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid container">
+    <div>
+      <div class="f-logo">
+        <div class="f-logo-icon"><svg viewBox="0 0 32 32" width="22" height="22" fill="none"><path d="M4 8l8 14 5-8 5 8 8-14" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <span class="f-logo-text">WEBORA</span>
+      </div>
+      <p class="footer-brand">Your Vision, Our Expertise. From Concept to Code. Building premium digital experiences for clients worldwide.</p>
+      <div class="footer-socials">
+        <a href="#">f</a>
+        <a href="#">𝕏</a>
+        <a href="#">in</a>
+        <a href="#">ig</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html">All Services</a></li>
+        <li><a href="services.html">Web Development</a></li>
+        <li><a href="services.html">UI/UX Design</a></li>
+        <li><a href="services.html">Branding</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>About</h4>
+      <ul>
+        <li><a href="index.html#testimonials">Testimonials</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="index.html#services">Portfolio</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Details</h4>
+      <div class="footer-contact-row">
+        <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+        <span>weborastudiozz@gmail.com</span>
+      </div>
+      <div class="footer-contact-row">
+        <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+        <span>weborasupport1@gmail.com</span>
+      </div>
+      <div class="footer-contact-row">
+        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-15.74-15.74A2 2 0 0 1 6.09 4h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6.29 6.29l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+        <span>+6266421834</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    Copyright © 2024 WEBORA Studioz. All Rights Reserved. | <a href="terms.html" style="color: var(--blue);">Terms & Conditions</a> | <a href="privacy.html" style="color: var(--blue);">Privacy Policy</a>
+  </div>
+</footer>
+
+<!-- CHAT WIDGET -->
+<div class="chat-widget">
+  <div class="chat-popup" id="chat-popup">
+    <div class="chat-popup-ic"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+    Hello! How can we help you today?
+  </div>
+  <button class="chat-fab" id="chat-btn" aria-label="Open chat">
+    <div class="chat-badge">WE'RE HERE</div>
+    <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+  </button>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
