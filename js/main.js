@@ -268,11 +268,11 @@ window.addEventListener('load', function() {
 const hero = document.querySelector(".hero");
 
 const heroImages = [
-  "images/hero-home.jpg",
-  "images/hero-home1.png",
-  "images/hero-home2.png", 
-    "images/hero-home3.png", 
-    "images/hero-home4.png"
+  "images/hero-home0.jpg",
+  "images/hero-home1.jpg",
+  "images/hero-home2.jpg", 
+    "images/hero-home3.jpg", 
+    "images/hero-home4.jpg"
 ];
 
 let index = 0;
