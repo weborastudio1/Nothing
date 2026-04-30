@@ -244,7 +244,55 @@ href="contact.html">CONTACT</a></li>
         <i class="fab fa-whatsapp"></i>
     </a>
 </div>
+<script type="module">
+  // Firebase SDKs
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+  import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
+  // 🔐 Firebase Configuration (tumhara wala)
+  const firebaseConfig = {
+    apiKey: "AIzaSyB3me6_lrmh4t84xTG8WYspPD3aIx7ouQA",
+    authDomain: "webora-contact.firebaseapp.com",
+    projectId: "webora-contact",
+    storageBucket: "webora-contact.firebasestorage.app",
+    messagingSenderId: "1028092068692",
+    appId: "1:1028092068692:web:f4f453bbb7879af9af7ec1"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  // Form reference
+  const form = document.getElementById("contactForm");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    // Form values
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const message = document.getElementById("message").value;
+
+    try {
+      await addDoc(collection(db, "contacts"), {
+        name: name,
+        email: email,
+        phone: phone,
+        message: message,
+        createdAt: new Date()
+      });
+
+      alert("✅ Message sent successfully!");
+      form.reset();
+
+    } catch (error) {
+      console.error("❌ Error:", error);
+      alert("Something went wrong. Please try again.");
+    }
+  });
+</script>
     <script src="js/main.js"></script>
 </body>
 </html>
