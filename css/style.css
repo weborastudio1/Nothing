@@ -336,7 +336,8 @@ img {
 
   z-index: 1;
 
-  animation: zoomHero 12s ease-in-out infinite alternate;
+  animation: heroZoom 12s ease-in-out infinite alternate;
+  transition: opacity 0.8s ease-in-out;
 }
 
 .hero-content {
