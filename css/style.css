@@ -1724,11 +1724,11 @@ img {
   opacity: 0;
 }
 /* ===== HERO BACKGROUND ZOOM ===== */
-@keyframes zoomBg {
+@keyframes heroZoom {
   from {
-    background-size: 110%;
+    transform: scale(1.05);
   }
   to {
-    background-size: 120%;
+    transform: scale(1.18);
   }
 }
