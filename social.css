@@ -2,108 +2,114 @@
   font-family: 'Poppins', sans-serif;
 }
 
-body {
-  background: linear-gradient(135deg, #0b0b0f, #111827);
-  color: #fff;
+/* ===== WEBORA SOCIAL PAGE (OLD THEME) ===== */
+
+body{
+  background:#0b0b0f;
+  color:#ffffff;
 }
 
 /* HERO */
-.social-hero {
-  text-align: center;
-  padding: 90px 20px 60px;
+.social-hero{
+  padding:100px 20px 60px;
+  text-align:center;
+  background:
+    radial-gradient(circle at top,
+    rgba(99,102,241,0.15),
+    #0b0b0f);
 }
 
-.social-hero h1 {
-  font-size: 42px;
-  font-weight: 700;
+.social-hero h1{
+  font-size:42px;
+  font-weight:700;
+  color:#ffffff;
 }
 
-.social-hero h1 span {
-  color: #4f46e5;
+.social-hero h1 span{
+  color:#6366f1;
 }
 
-.social-hero p {
-  color: #b5b5b5;
-  margin-top: 10px;
+.social-hero p{
+  color:#9ca3af;
+  margin-top:12px;
+  font-size:16px;
+}
+
+/* SECTION */
+.social-section{
+  padding:80px 20px;
 }
 
 /* GRID */
-.social-section {
-  padding: 60px 20px 100px;
-}
-
-.social-grid {
-  max-width: 1200px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
+.social-grid{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:28px;
 }
 
 /* CARD */
-.social-card {
-  background: rgba(255,255,255,0.05);
-  border-radius: 18px;
-  padding: 40px 30px;
-  text-align: center;
-  backdrop-filter: blur(10px);
-  transition: all 0.4s ease;
-  position: relative;
-  overflow: hidden;
+.social-card{
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:22px;
+  padding:42px 30px;
+  text-align:center;
+  transition:0.35s ease;
+  backdrop-filter:blur(10px);
 }
 
-.social-card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.1));
-  opacity: 0;
-  transition: 0.4s;
+.social-card:hover{
+  transform:translateY(-10px);
+  border-color:#6366f1;
+  box-shadow:0 20px 40px rgba(99,102,241,0.15);
 }
 
-.social-card:hover::after {
-  opacity: 1;
+.social-card i{
+  font-size:42px;
+  width:70px;
+  height:70px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  margin:0 auto 18px;
+  color:#ffffff;
 }
 
-.social-card:hover {
-  transform: translateY(-12px);
+.social-card h3{
+  font-size:20px;
+  font-weight:600;
+  margin-bottom:6px;
 }
 
-.social-card i {
-  font-size: 42px;
-  margin-bottom: 15px;
-}
-
-.social-card h3 {
-  font-size: 20px;
-  margin-bottom: 6px;
-}
-
-.social-card span {
-  font-size: 14px;
-  color: #cfcfcf;
+.social-card span{
+  font-size:14px;
+  color:#9ca3af;
 }
 
 /* BUTTON */
-.social-card .btn {
-  display: inline-block;
-  margin-top: 18px;
-  padding: 10px 28px;
-  border-radius: 30px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
+.social-card .btn{
+  margin-top:20px;
+  display:inline-block;
+  padding:11px 30px;
+  border-radius:30px;
+  text-decoration:none;
+  color:#ffffff;
+  font-weight:500;
+  background:#6366f1;
+  transition:0.3s ease;
 }
 
-/* PLATFORM COLORS */
-.instagram i, .instagram .btn { background: linear-gradient(45deg,#f58529,#dd2a7b,#8134af); }
-.facebook i, .facebook .btn { background:#1877f2; }
-.linkedin i, .linkedin .btn { background:#0a66c2; }
-.x i, .x .btn { background:#000; }
-.youtube i, .youtube .btn { background:#ff0000; }
-.discord i, .discord .btn { background:#5865f2; }
-
-.social-card i {
-  padding: 18px;
-  border-radius: 50%;
+.social-card .btn:hover{
+  background:#4f46e5;
 }
+
+/* PLATFORM ICON COLORS (soft, not loud) */
+.instagram i{background:linear-gradient(45deg,#833ab4,#fd1d1d,#fcb045);}
+.facebook i{background:#1877f2;}
+.linkedin i{background:#0a66c2;}
+.x i{background:#111;}
+.youtube i{background:#ff0000;}
+.discord i{background:#5865f2;}
