@@ -1727,3 +1727,61 @@ color: #00c2d1;
 }
 
 
+
+
+/* Socials Section */
+.socials-section {
+  padding: 80px 0;
+}
+
+.socials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.social-card {
+  background: #0f172a;
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 16px;
+  padding: 35px 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.social-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.social-card i {
+  font-size: 38px;
+  color: #38bdf8;
+  margin-bottom: 15px;
+}
+
+.social-card h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.social-card p {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 12px;
+}
+
+.social-card .followers {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 18px;
+  color: #e5e7eb;
+}
+
+/* Highlight YouTube */
+.social-card.highlight {
+  border: 1px solid #38bdf8;
+  background: linear-gradient(145deg, #020617, #020617);
+}
+
