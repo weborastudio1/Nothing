@@ -4,35 +4,35 @@
 
 /* ===== WEBORA SOCIAL PAGE (OLD THEME) ===== */
 
+/* ===== WEBORA SOCIAL PAGE (OLD SERVICES THEME) ===== */
+
 body{
-  background:#0b0b0f;
-  color:#ffffff;
+  background:#ffffff;
+  color:#0f172a;
 }
 
 /* HERO */
 .social-hero{
-  padding:100px 20px 60px;
+  padding:90px 20px 60px;
   text-align:center;
   background:
-    radial-gradient(circle at top,
-    rgba(99,102,241,0.15),
-    #0b0b0f);
+    linear-gradient(180deg,#e0f2fe,#ffffff);
 }
 
 .social-hero h1{
   font-size:42px;
   font-weight:700;
-  color:#ffffff;
+  color:#0f172a;
 }
 
 .social-hero h1 span{
-  color:#6366f1;
+  color:#2563eb;
 }
 
 .social-hero p{
-  color:#9ca3af;
   margin-top:12px;
   font-size:16px;
+  color:#475569;
 }
 
 /* SECTION */
@@ -46,28 +46,28 @@ body{
   margin:auto;
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:28px;
+  gap:26px;
 }
 
 /* CARD */
 .social-card{
-  background:rgba(255,255,255,0.04);
-  border:1px solid rgba(255,255,255,0.08);
-  border-radius:22px;
-  padding:42px 30px;
+  background:#ffffff;
+  border:1px solid #e5e7eb;
+  border-radius:18px;
+  padding:40px 28px;
   text-align:center;
-  transition:0.35s ease;
-  backdrop-filter:blur(10px);
+  transition:0.3s ease;
 }
 
 .social-card:hover{
-  transform:translateY(-10px);
-  border-color:#6366f1;
-  box-shadow:0 20px 40px rgba(99,102,241,0.15);
+  transform:translateY(-8px);
+  border-color:#38bdf8;
+  box-shadow:0 18px 35px rgba(37,99,235,0.12);
 }
 
+/* ICON */
 .social-card i{
-  font-size:42px;
+  font-size:38px;
   width:70px;
   height:70px;
   display:flex;
@@ -78,6 +78,7 @@ body{
   color:#ffffff;
 }
 
+/* TEXT */
 .social-card h3{
   font-size:20px;
   font-weight:600;
@@ -86,7 +87,7 @@ body{
 
 .social-card span{
   font-size:14px;
-  color:#9ca3af;
+  color:#475569;
 }
 
 /* BUTTON */
@@ -96,20 +97,20 @@ body{
   padding:11px 30px;
   border-radius:30px;
   text-decoration:none;
-  color:#ffffff;
   font-weight:500;
-  background:#6366f1;
+  color:#ffffff;
+  background:#2563eb;
   transition:0.3s ease;
 }
 
 .social-card .btn:hover{
-  background:#4f46e5;
+  background:#1d4ed8;
 }
 
-/* PLATFORM ICON COLORS (soft, not loud) */
-.instagram i{background:linear-gradient(45deg,#833ab4,#fd1d1d,#fcb045);}
+/* PLATFORM COLORS (SOFT & CLEAN) */
+.instagram i{background:linear-gradient(45deg,#f58529,#dd2a7b,#515bd4);}
 .facebook i{background:#1877f2;}
 .linkedin i{background:#0a66c2;}
-.x i{background:#111;}
+.x i{background:#0f172a;}
 .youtube i{background:#ff0000;}
 .discord i{background:#5865f2;}
