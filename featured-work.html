@@ -1,276 +1,2727 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Featured Works - WEBORA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description"
+      content="Explore selected WEBORA Studio projects across web development, UI/UX, e-commerce, branding, healthcare, 3D experiences and digital products.">
 
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-</head>
+<meta name="keywords"
+      content="WEBORA Studio, featured works, web development, website design, UI UX, e-commerce, digital agency">
 
-<body>
-    <!-- Top Bar -->
-    <div class="top-bar">
-        <div class="container">
-            <span class="welcome-text">Welcome To WEBORA</span>
-            <div class="top-contacts">
+<meta name="author" content="WEBORA Studio">
 
-                <a href="mailto:weborastudioz@gmail.com"><i class="fas fa-envelope"></i> weborastudiozz@gmail.com</a>
-                <a href="tel:+6266421834"><i class="fas fa-phone"></i> +6266421834</a>
-            </div>
-        </div>
+<title>Featured Works - WEBORA Studio</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+
+<style>
+
+    /* =========================================================
+       WEBORA FEATURED WORKS
+       ========================================================= */
+
+    .featured-page-hero {
+        padding: 105px 20px 85px;
+        background:
+            radial-gradient(circle at 15% 20%, rgba(34,150,243,.13), transparent 30%),
+            radial-gradient(circle at 85% 30%, rgba(0,190,255,.08), transparent 30%),
+            linear-gradient(135deg, #f8fcff, #eef7ff);
+        text-align: center;
+        border-bottom: 1px solid #e6eef6;
+    }
+
+    .featured-page-hero .hero-label {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 15px;
+        border-radius: 50px;
+        background: rgba(34,150,243,.09);
+        color: #0878d1;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 18px;
+    }
+
+    .featured-page-hero h1 {
+        margin: 0 auto 18px;
+        max-width: 850px;
+        font-size: clamp(40px, 7vw, 70px);
+        line-height: 1.05;
+        letter-spacing: -2.5px;
+        color: #07111f;
+        font-weight: 800;
+    }
+
+    .featured-page-hero h1 span {
+        color: #2296f3;
+    }
+
+    .featured-page-hero p {
+        max-width: 680px;
+        margin: auto;
+        color: #687587;
+        line-height: 1.8;
+        font-size: 16px;
+    }
+
+    /* =========================================================
+       FEATURED INTRO
+       ========================================================= */
+
+    .featured-intro {
+        padding: 80px 20px 35px;
+    }
+
+    .featured-intro-inner {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .featured-label {
+        color: #2296f3;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    .featured-intro h2 {
+        margin: 0;
+        font-size: clamp(30px, 5vw, 48px);
+        line-height: 1.15;
+        letter-spacing: -1.5px;
+        color: #07111f;
+    }
+
+    .featured-intro h2 span {
+        color: #2296f3;
+    }
+
+    .featured-intro p {
+        max-width: 680px;
+        color: #687587;
+        line-height: 1.8;
+        margin: 15px 0 0;
+    }
+
+    /* =========================================================
+       FEATURED GRID
+       ========================================================= */
+
+    .featured-projects-section {
+        padding: 35px 20px 100px;
+    }
+
+    .featured-projects-container {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .featured-projects-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
+    }
+
+    .featured-project-card {
+        background: #fff;
+        border: 1px solid #e4edf5;
+        border-radius: 22px;
+        overflow: hidden;
+        box-shadow: 0 8px 30px rgba(20,70,110,.05);
+        transition: .3s ease;
+    }
+
+    .featured-project-card:hover {
+        transform: translateY(-7px);
+        box-shadow: 0 22px 55px rgba(20,70,110,.13);
+    }
+
+    /* =========================================================
+       PROJECT IMAGE / PREVIEW
+       ========================================================= */
+
+    .featured-project-preview {
+        height: 285px;
+        position: relative;
+        overflow: hidden;
+        background: #0b1523;
+    }
+
+    .featured-project-preview iframe {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 138%;
+        height: 138%;
+        border: 0;
+        transform: scale(.725);
+        transform-origin: top left;
+        pointer-events: none;
+        background: #fff;
+    }
+
+    .featured-project-preview img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .featured-project-preview::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+            180deg,
+            rgba(0,0,0,.02),
+            rgba(0,0,0,.22)
+        );
+        pointer-events: none;
+    }
+
+    .featured-project-number {
+        position: absolute;
+        z-index: 3;
+        top: 15px;
+        left: 15px;
+        width: 38px;
+        height: 38px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        background: rgba(255,255,255,.94);
+        color: #07111f;
+        font-size: 11px;
+        font-weight: 800;
+    }
+
+    .featured-project-category {
+        position: absolute;
+        z-index: 3;
+        top: 15px;
+        right: 15px;
+        padding: 7px 12px;
+        border-radius: 50px;
+        background: rgba(5,15,28,.78);
+        color: #fff;
+        font-size: 10px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: .6px;
+        backdrop-filter: blur(8px);
+    }
+
+    /* =========================================================
+       CONTENT
+       ========================================================= */
+
+    .featured-project-content {
+        padding: 25px;
+    }
+
+    .featured-project-content h3 {
+        margin: 0 0 9px;
+        font-size: 21px;
+        color: #07111f;
+        line-height: 1.35;
+    }
+
+    .featured-project-content p {
+        margin: 0 0 18px;
+        color: #687587;
+        line-height: 1.75;
+        font-size: 13px;
+    }
+
+    .featured-services {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 21px;
+    }
+
+    .featured-services span {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 7px 10px;
+        border-radius: 7px;
+        background: #f1f6fb;
+        color: #506276;
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+    .featured-services span i {
+        color: #2296f3;
+    }
+
+    .featured-project-actions {
+        display: flex;
+        gap: 9px;
+    }
+
+    .featured-project-actions .btn {
+        flex: 1;
+        text-align: center;
+    }
+
+    /* =========================================================
+       FEATURED BADGE
+       ========================================================= */
+
+    .featured-project-card.primary-project {
+        border-color: rgba(34,150,243,.30);
+    }
+
+    .featured-project-card.primary-project .featured-project-category {
+        background: #2296f3;
+    }
+
+    /* =========================================================
+       STATS
+       ========================================================= */
+
+    .featured-stats-section {
+        padding: 80px 20px;
+        background: #f6faff;
+        border-top: 1px solid #e7eff6;
+        border-bottom: 1px solid #e7eff6;
+    }
+
+    .featured-stats {
+        max-width: 1000px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background: #fff;
+        border: 1px solid #e3edf5;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 15px 40px rgba(20,70,110,.07);
+    }
+
+    .featured-stat {
+        text-align: center;
+        padding: 30px 20px;
+        border-right: 1px solid #e3edf5;
+    }
+
+    .featured-stat:last-child {
+        border-right: 0;
+    }
+
+    .featured-stat strong {
+        display: block;
+        color: #07111f;
+        font-size: 35px;
+        font-weight: 800;
+    }
+
+    .featured-stat span {
+        color: #687587;
+        font-size: 11px;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: .8px;
+    }
+
+    /* =========================================================
+       CTA
+       ========================================================= */
+
+    .featured-final-cta {
+        padding: 105px 20px;
+        text-align: center;
+        background:
+            radial-gradient(circle at center, rgba(34,150,243,.10), transparent 45%),
+            #f8fbfe;
+    }
+
+    .featured-final-cta h2 {
+        max-width: 760px;
+        margin: auto;
+        font-size: clamp(32px, 5vw, 54px);
+        line-height: 1.12;
+        color: #07111f;
+        letter-spacing: -2px;
+    }
+
+    .featured-final-cta p {
+        max-width: 600px;
+        margin: 17px auto 30px;
+        color: #687587;
+        line-height: 1.8;
+    }
+
+    /* =========================================================
+       RESPONSIVE
+       ========================================================= */
+
+    @media (max-width: 800px) {
+
+        .featured-projects-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .featured-stats {
+            grid-template-columns: 1fr;
+        }
+
+        .featured-stat {
+            border-right: 0;
+            border-bottom: 1px solid #e3edf5;
+        }
+
+        .featured-stat:last-child {
+            border-bottom: 0;
+        }
+
+    }
+
+    @media (max-width: 500px) {
+
+        .featured-page-hero {
+            padding: 75px 18px 65px;
+        }
+
+        .featured-intro {
+            padding: 65px 18px 30px;
+        }
+
+        .featured-projects-section {
+            padding: 30px 18px 75px;
+        }
+
+        .featured-project-preview {
+            height: 235px;
+        }
+
+        .featured-project-content {
+            padding: 20px;
+        }
+
+        .featured-project-actions {
+            flex-direction: column;
+        }
+
+    }
+
+</style>
+
+</head><body><!-- =========================================================
+     TOP BAR
+     ========================================================= --><div class="top-bar"><div class="container">
+
+    <span class="welcome-text">
+        Welcome To WEBORA
+    </span>
+
+    <div class="top-contacts">
+
+        <a href="mailto:weborastudioz@gmail.com">
+            <i class="fas fa-envelope"></i>
+            weborastudioz@gmail.com
+        </a>
+
+        <a href="tel:+6266421834">
+            <i class="fas fa-phone"></i>
+            +6266421834
+        </a>
+
     </div>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <a href="index.html" class="logo">
-  <div class="logo-icon">
-    <img src="images/logo-icon.png" alt="Webora Icon">
-  </div>
-  <span>WEBORA</span>
-</a>
-            <nav class="nav">
-                <ul class="nav-links">
-                    <li><a href="index.html" class="active">HOME</a></li>
-                    <li><a href="services.html">SERVICES</a></li>
-                    <li><a href="portfolio.html">PORTFOLIO</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
+</div>
 
-<li><a href="legal.html">LEGALS</a></li>
-                   <li><a
-href="contact.html">CONTACT</a></li>
-                </ul>
-            </nav>
-            <div class="header-buttons">
-                <a href="services.html" class="btn btn-primary">GET STARTED</a>
-                <a href="contact.html" class="btn btn-outline">CONTACT</a>
-            </div>
-            <button class="mobile-toggle" id="mobileToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+</div><!-- =========================================================
+     HEADER
+     ========================================================= --><header class="header"><div class="container">
+
+    <a href="index.html" class="logo">
+
+        <div class="logo-icon">
+            <img src="images/logo-icon.png"
+                 alt="Webora Icon">
         </div>
-    </header>
 
-      <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobileMenu">
-        <ul>
-            <li><a href="index.html" class="active">HOME</a></li>
+        <span>WEBORA</span>
 
-<li><a href="career.html">CAREER</a></li>
-
-<li><a href="services.html" class="active">SERVICES</a></li>
-
-<li><a href="featured-work.html">WORKS</a></li>
-
-<li><a href="index.html" >BLoG 🔒</a></li>
-
-<li><a href="about.html">ABOUT</a></li>
-
-<li><a href="index.html">SoCIaL 🔒</a></li>
-
-<li><a href="portfolio.html">PORTFOLIO</a></li>
-
-<li><a href="legal.html">LEGALS</a></li>
+    </a>
 
 
+    <nav class="nav">
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">
+                    HOME
+                </a>
+            </li>
+
+            <li>
+                <a href="services.html">
+                    SERVICES
+                </a>
+            </li>
+
+            <li>
+                <a href="portfolio.html">
+                    PORTFOLIO
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    ABOUT
+                </a>
+            </li>
+
+            <li>
+                <a href="legal.html">
+                    LEGALS
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html">
+                    CONTACT
+                </a>
+            </li>
 
         </ul>
-        <div class="mobile-buttons">
-            <a href="services.html" class="btn btn-primary">GET STARTED</a>
-            <a href="contact.html" class="btn btn-outline">CONTACT</a>
-        </div>
-    </div>
 
-<!-- Hero -->
-<section class="page-hero">
-  <div class="container">
-    <h1>FEATURED WORKS</h1>
-    <p>Handpicked projects that reflect our design, development & growth expertise.</p>
-  </div>
-</section>
+    </nav>
 
-<!-- Featured Works Grid -->
-<section class="featured-section">
-  <div class="container">
-    <div class="featured-grid">
 
-      <!-- Project 1 -->
-      <div class="featured-card">
-        <div class="featured-image">
-          <img src="images/d1.jpg" alt="E COMMERCE WEBSITE">
-        </div>
-        <div class="featured-content">
-          <h3>www.dreamyscrunch.store</h3>
-          <p>
-          DREAMYSCRUNCH website focused on lead generation,
-            branding & scalability.
-          </p>
+    <div class="header-buttons">
 
-          <div class="featured-services">
-            <span><i class="fas fa-globe"></i> Web Development</span>
-            <span><i class="fas fa-paint-brush"></i> UI/UX</span>
-            <span><i class="fas fa-search"></i> SEO</span>
-          </div>
+        <a href="services.html"
+           class="btn btn-primary">
+            GET STARTED
+        </a>
 
-          <a href="https://www.dreamyscrunch.store/" class="btn btn-outline btn-sm">CHECK THIS PROJECT</a>
-        </div>
-      </div>
-
-      <!-- Project 2 -->
-      <div class="featured-card">
-        <div class="featured-image">
-          <img src="images/play.png" alt="Indian Bus Song App">
-        </div>
-        <div class="featured-content">
-          <h3>Indian Bus Song App</h3>
-          <p>
-        Free, unlimited music, background player, old music 
-          </p>
-
-          <div class="featured-services">
-            <span><i class="fas fa-globe"></i>app Development</span>
-            <span><i class="fas fa-paint-brush"></i> mobile friendly</span>
-            <span><i class="fas fa-search"></i> database</span>
-          </div>
-
-          <a href="https://indain-bus.vercel.app/" class="btn btn-outline btn-sm">Check Project</a>
-        </div>
-      </div>
-
-      <!-- Project 3 -->
-      <div class="featured-card">
-        <div class="featured-image">
-          <img src="images/kamaix.png" alt=Kamaix Earning App">
-        </div>
-        <div class="featured-content">
-          <h3>KamaiX Earning App</h3>
-          <p>
-          Join , Play, Earn
-          </p>
-
-          <div class="featured-services">
-            <span><i class="fas fa-globe"></i> app Development</span>
-            <span><i class="fas fa-paint-brush"></i> backend</span>
-            <span><i class="fas fa-search"></i> databases</span>
-          </div>
-
-          <a href="https://kamaix.vercel.app/" class="btn btn-outline btn-sm">check Project</a>
-        </div>
-      </div>
-
-      <!-- Project 4 -->
-      <div class="featured-card">
-        <div class="featured-image">
-          <img src="images/Ecommerce.png" alt="E-commerce Landing Page">
-        </div>
-        <div class="featured-content">
-          <h3>E-commerce Landing Page</h3>
-          <p>
-            Conversion-focused landing page designed for sales,
-            performance & smooth user flow.
-          </p>
-
-          <div class="featured-services">
-            <span><i class="fas fa-paint-brush"></i> UI/UX</span>
-            <span><i class="fas fa-certificate"></i> Branding</span>
-          </div>
-
-          <a href="contact.html" class="btn btn-outline btn-sm">Start Similar Project</a>
-        </div>
-      </div>
-
-<!-- Project 5 -->
-      <div class="featured-card">
-        <div class="featured-image">
-          <img src="images/agency.png" alt="Digital Agency Web App">
-        </div>
-        <div class="featured-content">
-          <h3>Digital Agency Web Application</h3>
-          <p>
-            High-performance agency website focused on lead generation,
-            branding & scalability.
-          </p>
-
-          <div class="featured-services">
-            <span><i class="fas fa-globe"></i> Web Development</span>
-            <span><i class="fas fa-paint-brush"></i> UI/UX</span>
-            <span><i class="fas fa-search"></i> SEO</span>
-          </div>
-
-          <a href="contact.html" class="btn btn-outline btn-sm">Start Similar Project</a>
-        </div>
-      </div>
-
-      <!-- Add more projects easily below -->
+        <a href="contact.html"
+           class="btn btn-outline">
+            CONTACT
+        </a>
 
     </div>
-  </div>
-</section>
 
-<!-- CTA -->
-<section class="cta-section cta-dark">
-  <div class="container">
-    <h2>WANT YOUR PROJECT TO BE FEATURED HERE?</h2>
-    <p>Let’s build something powerful & scalable together.</p>
-    <a href="contact.html" class="btn btn-primary btn-lg">DISCUSS YOUR PROJECT</a>
-  </div>
-</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>QUICK LINKS</h4>
-                    <ul>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="about.html">About</a></li>
-<li><a href="portfolio.html">Portfolio</a></li>
-                    </ul>
+    <button class="mobile-toggle"
+            id="mobileToggle"
+            aria-label="Open menu">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </button>
+
+</div>
+
+</header><!-- =========================================================
+     MOBILE MENU
+     ========================================================= --><div class="mobile-menu" id="mobileMenu"><ul>
+
+    <li>
+        <a href="index.html">
+            HOME
+        </a>
+    </li>
+
+    <li>
+        <a href="career.html">
+            CAREER
+        </a>
+    </li>
+
+    <li>
+        <a href="services.html">
+            SERVICES
+        </a>
+    </li>
+
+    <li>
+        <a href="featured-work.html"
+           class="active">
+            WORKS
+        </a>
+    </li>
+
+    <li>
+        <a href="index.html">
+            BLOG 🔒
+        </a>
+    </li>
+
+    <li>
+        <a href="about.html">
+            ABOUT
+        </a>
+    </li>
+
+    <li>
+        <a href="index.html">
+            SOCIAL 🔒
+        </a>
+    </li>
+
+    <li>
+        <a href="portfolio.html">
+            PORTFOLIO
+        </a>
+    </li>
+
+    <li>
+        <a href="legal.html">
+            LEGALS
+        </a>
+    </li>
+
+</ul>
+
+
+<div class="mobile-buttons">
+
+    <a href="services.html"
+       class="btn btn-primary">
+        GET STARTED
+    </a>
+
+    <a href="contact.html"
+       class="btn btn-outline">
+        CONTACT
+    </a>
+
+</div>
+
+</div><!-- =========================================================
+     HERO
+     ========================================================= --><section class="featured-page-hero"><div class="container">
+
+    <div class="hero-label">
+        <i class="fas fa-sparkles"></i>
+        WEBORA STUDIO
+    </div>
+
+    <h1>
+        FEATURED
+        <span>WORKS</span>
+    </h1>
+
+    <p>
+        A curated selection of websites, digital products,
+        creative experiences and business solutions created
+        by the WEBORA team and our partner network.
+    </p>
+
+</div>
+
+</section><!-- =========================================================
+     INTRO
+     ========================================================= --><section class="featured-intro"><div class="featured-intro-inner">
+
+    <div class="featured-label">
+        SELECTED PROJECTS
+    </div>
+
+    <h2>
+        Work that represents
+        <span>what we build.</span>
+    </h2>
+
+    <p>
+        These selected projects demonstrate our range across
+        web development, UI/UX, e-commerce, branding, healthcare,
+        business websites, interactive experiences and digital products.
+    </p>
+
+</div>
+
+</section><!-- =========================================================
+     FEATURED PROJECTS
+     ========================================================= --><section class="featured-projects-section"><div class="featured-projects-container">
+
+    <div class="featured-projects-grid">
+
+
+        <!-- =================================================
+             PROJECT 01
+             ================================================= -->
+
+        <article class="featured-project-card primary-project">
+
+            <div class="featured-project-preview">
+
+                <iframe
+                    src="https://ltx-ecom.vercel.app/"
+                    loading="lazy"
+                    title="LTX project preview">
+                </iframe>
+
+                <div class="featured-project-number">
+                    01
                 </div>
-                <div class="footer-col">
-                    <h4>LEGALS</h4>
-                    <ul>
-                        <li><a href="terms.html">Terms & Conditions</a></li>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                    </ul>
+
+                <div class="featured-project-category">
+                    Creative / Product
                 </div>
-                <div class="footer-col">
-                    <h4>Contact Details</h4>
-                    <ul>
-                        <li><i class="fas fa-envelope"></i> weboraastudioz.com</li>
-                        <li><i class="fas fa-phone"></i> +6266421834</li>
-                    </ul>
-                    <div class="social-links">
 
-
-                        <a href="https://www.instagram.com/weborastudio.xyz" target="_blank" rel="noopener">
-    <i class="fab fa-instagram"></i>
-  </a>
-
-<a href="https://www.facebook.com/profile.php?id=61590725970278" target="_blank" rel="noopener">
-  <i class="fab fa-facebook-f"></i>
-</a>
-                        <a href="https://www.linkedin.com/in/webora-studio-a975ab415" target="_blank" rel="noopener">
-    <i class="fab fa-linkedin-in"></i>
-  </a>
-                          <a href="https://x.com/weborastudioo" target="_blank" rel="noopener">
-    <i class="fab fa-twitter"></i
-
-                    </div>
-                </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>Copyright © 2024 WEBORA Studioz. All Rights Reserved.</p>
-        </div>
-    </footer>
 
-<script src="js/main.js"></script>
-</body>
+
+            <div class="featured-project-content">
+
+                <h3>
+                    LTX — The World Model
+                </h3>
+
+                <p>
+                    A futuristic product experience focused on
+                    immersive visual storytelling, modern UI and
+                    high-impact digital presentation.
+                </p>
+
+                <div class="featured-services">
+
+                    <span>
+                        <i class="fas fa-globe"></i>
+                        Web Development
+                    </span>
+
+                    <span>
+                        <i class="fas fa-paint-brush"></i>
+                        UI/UX
+                    </span>
+
+                    <span>
+                        <i class="fas fa-wand-magic-sparkles"></i>
+                        Creative UI
+                    </span>
+
+                </div>
+
+                <div class="featured-project-actions">
+
+                    <a href="https://ltx-ecom.vercel.app/"
+                       target="_blank"
+                       rel="noopener"
+                       class="btn btn-primary btn-sm">
+
+                        VIEW PROJECT
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             PROJECT 02
+             ================================================= -->
+
+        <article class="featured-project-card">
+
+            <div class="featured-project-preview">
+
+                <iframe
+                    src="https://cyber-ronin-neural-edges.vercel.app/"
+                    loading="lazy"
+                    title="Cyber Ronin project preview">
+                </iframe>
+
+                <div class="featured-project-number">
+                    02
+                </div>
+
+                <div class="featured-project-category">
+                    Creative
+                </div>
+
+            </div>
+
+
+            <div class="featured-project-content">
+
+                <h3>
+                    Cyber Ronin — Neural Edges
+                </h3>
+
+                <p>
+                    A futuristic digital experience combining
+                    product presentation, visual storytelling
+                    and modern interface design.
+                </p>
+
+                <div class="featured-services">
+
+                    <span>
+                        <i class="fas fa-globe"></i>
+                        Web Design
+                    </span>
+
+                    <span>
+                        <i class="fas fa-layer-group"></i>
+                        UI/UX
+                    </span>
+
+                    <span>
+                        <i class="fas fa-bolt"></i>
+                        Interactive
+                    </span>
+
+                </div>
+
+                <div class="featured-project-actions">
+
+                    <a href="https://cyber-ronin-neural-edges.vercel.app/"
+                       target="_blank"
+                       rel="noopener"
+                       class="btn btn-primary btn-sm">
+
+                        VIEW PROJECT
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             PROJECT 03
+             ================================================= -->
+
+        <article class="featured-project-card">
+
+            <div class="featured-project-preview">
+
+                <iframe
+                    src="https://manik-car.vercel.app/"
+                    loading="lazy"
+                    title="VEYRA automotive project preview">
+                </iframe>
+
+                <div class="featured-project-number">
+                    03
+                </div>
+
+                <div class="featured-project-category">
+                    Automotive
+                </div>
+
+            </div>
+
+
+            <div class="featured-project-content">
+
+                <h3>
+                    VEYRA — Electric
+                </h3>
+
+                <p>
+                    Premium automotive digital experience built
+                    around product storytelling and a strong
+                    visual identity.
+                </p>
+
+                <div class="featured-services">
+
+                    <span>
+                        <i class="fas fa-car"></i>
+                        Automotive
+                    </span>
+
+                    <span>
+                        <i class="fas fa-paint-brush"></i>
+                        UI/UX
+                    </span>
+
+                    <span>
+                        <i class="fas fa-certificate"></i>
+                        Branding
+                    </span>
+
+                </div>
+
+                <div class="featured-project-actions">
+
+                    <a href="https://manik-car.vercel.app/"
+                       target="_blank"
+                       rel="noopener"
+                       class="btn btn-primary btn-sm">
+
+                        VIEW PROJECT
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             PROJECT 04
+             ================================================= -->
+
+        <article class="featured-project-card">
+
+            <div class="featured-project-preview">
+
+                <iframe
+                    src="https://loopa-memphis-vercel.vercel.app/"
+                    loading="lazy"
+                    title="Loopa project preview">
+                </iframe>
+
+                <div class="featured-project-number">
+                    04
+                </div>
+
+                <div class="featured-project-category">
+                    SaaS
+                </div>
+
+            </div>
+
+
+            <div class="featured-project-content">
+
+                <h3>
+                    Loopa — Team Productivity
+                </h3>
+
+                <p>
+                    SaaS-style product experience focused on
+                    productivity, product positioning and a
+                    clear conversion journey.
+                </p>
+
+                <div class="featured-services">
+
+                    <span>
+                        <i class="fas fa-layer-group"></i>
+                        Product UI
+                    </span>
+
+                    <span>
+                        <i class="fas fa-users"></i>
+                        SaaS
+                    </span>
+
+                    <span>
+                        <i class="fas fa-chart-line"></i>
+                        Conversion
+                    </span>
+
+                </div>
+
+                <div class="featured-project-actions">
+
+                    <a href="https://loopa-memphis-vercel.vercel.app/"
+                       target="_blank"
+                       rel="noopener"
+                       class="btn btn-primary btn-sm">
+
+                        VIEW PROJECT
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             PROJECT 05
+             ================================================= -->
+
+        <article class="featured-project-card">
+
+            <div class="featured-project-preview">
+
+                <iframe
+                    src="https://orbit-secure-system.vercel.app/"
+                    loading="lazy"
+                    title="Orbit Secure System project preview">
+                </iframe>
+
+                <div class="featured-project-number">
+                    05
+                </div>
+
+                <div class="featured-project-category">
+                    Technology
+                </div>
+
+            </div>
+
+
+            <div class="featured-project-content">
+
+                <h3>
+                    Orbit — Secure System
+                </h3>
+
+                <p>
+                    Technology-focused interface designed around
+                    digital systems, connected workflows and
+                    modern presentation.
+                </p>
+
+                <div class="featured-services">
+
+                    <span>
+                        <i class="fas fa-shield-halved"></i>
+                        Technology
+                    </span>
+
+                    <span>
+                        <i class="fas fa-code"></i>
+                        Development
+                    </span>
+
+                    <span>
+                        <i class="fas fa-layer-group"></i>
+                        UI/UX
+                    </span>
+
+                </div>
+
+                <div class="featured-project-actions">
+
+                    <a href="https://orbit-secure-system.vercel.app/"
+                       target="_blank"
+                       rel="noopener"
+                       class="btn btn-primary btn-sm">
+
+                        VIEW PROJECT
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             PROJECT 06
+             ================================================= -->
+
+        <article class="featured-project-card">
+
+            <div class="featured-project-preview">
+
+                <iframe
+                    src="https://tubes-interactive-background-vercel.vercel.app/"
+                    loading="lazy"
+                    title="Tubes interactive project preview">
+                </iframe>
+
+                <div class="featured-project-number">
+                    06
+                </div>
+
+                <div class="featured-project-category">
+                    Interactive
+                </div>
+
+            </div>
+
+
+            <div class="featured-project-content">
+
+                <h3>
+                    Tubes — Interactive Experience
+                </h3>
+
+                <p>
+                    Experimental interactive visual project
+                    demonstrating motion, dynamic backgrounds
+                    and creative front-end development.
+                </p>
+
+                <div class="featured-services">
+
+                    <span>
+                        <i class="fas fa-bolt"></i>
+                        Interactive
+                    </span>
+
+                    <span>
+                        <i class="fas fa-wand-magic-sparkles"></i>
+                        Animation
+                    </span>
+
+                    <span>
+                        <i class="fas fa-code"></i>
+                        Creative Code
+                    </span>
+
+                </div>
+
+                <div class="featured-project-actions">
+
+                    <a href="https://tubes-interactive-background-vercel.vercel.app/"
+                       target="_blank"
+                       rel="noopener"
+                       class="btn btn-primary btn-sm">
+
+                        VIEW PROJECT
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             PROJECT 07
+             ================================================= -->
+
+        <article class="featured-project-card">
+
+            <div class="featured-project-preview">
+
+                <iframe
+                    src="https://manikhub.vercel.app/"
+                    loading="lazy"
+                    title="TOONHUB project preview">
+                </iframe>
+
+                <div class="featured-project-number">
+                    07
+                </div>
+
+                <div class="featured-project-category">
+                    Creative
+                </div>
+
+            </div>
+
+
+            <div class="featured-project-content">
+
+                <h3>
+                    TOONHUB — Figurines
+                </h3>
+
+                <p>
+                    Playful character and product-focused digital
+                    experience designed around visual presentation
+                    and creative interaction.
+                </p>
+
+                <div class="featured-services">
+
+                    <span>
+                        <i class="fas fa-palette"></i>
+                        Creative
+                    </span>
+
+                    <span>
+                        <i class="fas fa-cube"></i>
+                        Product
+                    </span>
+
+                    <span>
+                        <i class="fas fa-paint-brush"></i>
+                        Visual UI
+                    </span>
+
+                </div>
+
+                <div class="featured-project-actions">
+
+                    <a href="https://manikhub.vercel.app/"
+                       target="_blank"
+                       rel="noopener"
+                       class="btn btn-primary btn-sm">
+
+                        VIEW PROJECT
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             PROJECT 08
+             ================================================= -->
+
+        <article class="featured-project-card">
+
+            <div class="featured-project-preview">
+
+                <iframe
+                    src="https://cast-steel.vercel.app/"
+                    loading="lazy"
+                    title="Cast and Render project preview">
+                </iframe>
+
+                <div class="featured-project-number">
+                    08
+                </div>
+
+                <div class="featured-project-category">
+                    3D
+                </div>
+
+            </div>
+
+
+            <div class="featured-project-content">
+
+                <h3>
+                    Cast & Render — 3D Studio
+                </h3>
+
+                <p>
+                    High-impact creative experience focused on
+                    3D visuals, studio presentation and digital
+                    storytelling.
+                </p>
+
+                <div class="featured-services">
+
+                    <span>
+                        <i class="fas fa-cube"></i>
+                        3D
+                    </span>
+
+                    <span>
+                        <i class="fas fa-camera"></i>
+                        Visuals
+                    </span>
+
+                    <span>
+                        <i class="fas fa-wand-magic-sparkles"></i>
+                        Creative
+                    </span>
+
+                </div>
+
+                <div class="featured-project-actions">
+
+                    <a href="https://cast-steel.vercel.app/"
+                       target="_blank"
+                       rel="noopener"
+                       class="btn btn-primary btn-sm">
+
+                        VIEW PROJECT
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             PROJECT 09
+             ================================================= -->
+
+        <article class="featured-project-card">
+
+            <div class="featured-project-preview">
+
+                <iframe
+                    src="https://spaceedu-site-2-1.vercel.app/"
+                    loading="lazy"
+                    title="Manik's Universe project preview">
+                </iframe>
+
+                <div class="featured-project-number">
+                    09
+                </div>
+
+                <div class="featured-project-category">
+                    Education / 3D
+                </div>
+
+            </div>
+
+
+            <div class="featured-project-content">
+
+                <h3>
+                    Manik's Universe
+                </h3>
+
+                <p>
+                    Interactive space-learning experience with
+                    a visual 3D presentation designed for engaging
+                    exploration.
+                </p>
+
+                <div class="featured-services">
+
+                    <span>
+                        <i class="fas fa-graduation-cap"></i>
+                        Education
+                    </span>
+
+                    <span>
+                        <i class="fas fa-cube"></i>
+                        3D
+                    </span>
+
+                    <span>
+                        <i class="fas fa-rocket"></i>
+                        Interactive
+                    </span>
+
+                </div>
+
+                <div class="featured-project-actions">
+
+                    <a href="https://spaceedu-site-2-1.vercel.app/"
+                       target="_blank"
+                       rel="noopener"
+                       class="btn btn-primary btn-sm">
+
+                        VIEW PROJECT
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             PROJECT 10
+             ================================================= -->
+
+        <article class="featured-project-card">
+
+            <div class="featured-project-preview">
+
+                <iframe
+                    src="https://soda-vercel-single.vercel.app/"
+                    loading="lazy"
+                    title="Diet Soda project preview">
+                </iframe>
+
+                <div class="featured-project-number">
+                    10
+                </div>
+
+                <div class="featured-project-category">
+                    Product
+                </div>
+
+            </div>
+
+
+            <div class="featured-project-content">
+
+                <h3>
+                    Diet Soda — Product Experience
+                </h3>
+
+                <p>
+                    Product-focused landing experience designed
+                    around visual branding, product discovery and
+                    e-commerce presentation.
+                </p>
+
+                <div class="featured-services">
+
+                    <span>
+                        <i class="fas fa-store"></i>
+                        E-commerce
+                    </span>
+
+                    <span>
+                        <i class="fas fa-box"></i>
+                        Product
+                    </span>
+
+                    <span>
+                        <i class="fas fa-certificate"></i>
+                        Branding
+                    </span>
+
+                </div>
+
+                <div class="featured-project-actions">
+
+                    <a href="https://soda-vercel-single.vercel.app/"
+                       target="_blank"
+                       rel="noopener"
+                       class="btn btn-primary btn-sm">
+
+                        VIEW PROJECT
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             PROJECT 11
+             ================================================= -->
+
+        <article class="featured-project-card">
+
+            <div class="featured-project-preview">
+
+                <iframe
+                    src="https://terra-hero-manik.vercel.app/"
+                    loading="lazy"
+                    title="Terra Living Wellness project preview">
+                </iframe>
+
+                <div class="featured-project-number">
+                    11
+                </div>
+
+                <div class="featured-project-category">
+                    Wellness
+                </div>
+
+            </div>
+
+
+            <div class="featured-project-content">
+
+                <h3>
+                    TERRA — Living Wellness
+                </h3>
+
+                <p>
+                    Premium lifestyle and wellness experience built
+                    around calm visual storytelling and product
+                    presentation.
+                </p>
+
+                <div class="featured-services">
+
+                    <span>
+                        <i class="fas fa-leaf"></i>
+                        Wellness
+                    </span>
+
+                    <span>
+                        <i class="fas fa-palette"></i>
+                        Branding
+                    </span>
+
+                    <span>
+                        <i class="fas fa-box"></i>
+                        Product
+                    </span>
+
+                </div>
+
+                <div class="featured-project-actions">
+
+                    <a href="https://terra-hero-manik.vercel.app/"
+                       target="_blank"
+                       rel="noopener"
+                       class="btn btn-primary btn-sm">
+
+                        VIEW PROJECT
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             PROJECT 12
+             ================================================= -->
+
+        <article class="featured-project-card">
+
+            <div class="featured-project-preview">
+
+                <iframe
+                    src="https://greengrow-nursery.vercel.app/"
+                    loading="lazy"
+                    title="GreenGrow Nursery project preview">
+                </iframe>
+
+                <div class="featured-project-number">
+                    12
+                </div>
+
+                <div class="featured-project-category">
+                    Business
+                </div>
+
+            </div>
+
+
+            <div class="featured-project-content">
+
+                <h3>
+                    GreenGrow Nursery
+                </h3>
+
+                <p>
+                    Nursery and plant business website created around
+                    product discovery, brand presentation and customer
+                    engagement.
+                </p>
+
+                <div class="featured-services">
+
+                    <span>
+                        <i class="fas fa-seedling"></i>
+                        Nursery
+                    </span>
+
+                    <span>
+                        <i class="fas fa-store"></i>
+                        Business
+                    </span>
+
+                    <span>
+                        <i class="fas fa-paint-brush"></i>
+                        Branding
+                    </span>
+
+                </div>
+
+                <div class="featured-project-actions">
+
+                    <a href="https://greengrow-nursery.vercel.app/"
+                       target="_blank"
+                       rel="noopener"
+                       class="btn btn-primary btn-sm">
+
+                        VIEW PROJECT
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             PROJECT 13
+             ================================================= -->
+
+        <article class="featured-project-card">
+
+            <div class="featured-project-preview">
+
+                <iframe
+                    src="https://www.dobetterhelp.com/"
+                    loading="lazy"
+                    title="Do Better Help project preview">
+                </iframe>
+
+                <div class="featured-project-number">
+                    13
+                </div>
+
+                <div class="featured-project-category">
+                    Platform
+                </div>
+
+            </div>
+
+
+            <div class="featured-project-content">
+
+                <h3>
+                    Do Better Help
+                </h3>
+
+                <p>
+                    Service-oriented digital platform focused on
+                    clear information architecture, usability and
+                    user engagement.
+                </p>
+
+                <div class="featured-services">
+
+                    <span>
+                        <i class="fas fa-layer-group"></i>
+                        Platform
+                    </span>
+
+                    <span>
+                        <i class="fas fa-users"></i>
+                        UX
+                    </span>
+
+                    <span>
+                        <i class="fas fa-globe"></i>
+                        Web Development
+                    </span>
+
+                </div>
+
+                <div class="featured-project-actions">
+
+                    <a href="https://www.dobetterhelp.com/"
+                       target="_blank"
+                       rel="noopener"
+                       class="btn btn-primary btn-sm">
+
+                        VIEW PROJECT
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             PROJECT 14
+             ================================================= -->
+
+        <article class="featured-project-card">
+
+            <div class="featured-project-preview">
+
+                <iframe
+                    src="https://coloursphotobooks.in/"
+                    loading="lazy"
+                    title="Colours Photobooks project preview">
+                </iframe>
+
+                <div class="featured-project-number">
+                    14
+                </div>
+
+                <div class="featured-project-category">
+                    Photography
+                </div>
+
+            </div>
+
+
+            <div class="featured-project-content">
+
+                <h3>
+                    Colours Photobooks
+                </h3>
+
+                <p>
+                    Photography and photobook business website
+                    focused on visual storytelling and premium
+                    portfolio presentation.
+                </p>
+
+                <div class="featured-services">
+
+                    <span>
+                        <i class="fas fa-camera"></i>
+                        Photography
+                    </span>
+
+                    <span>
+                        <i class="fas fa-images"></i>
+                        Portfolio
+                    </span>
+
+                    <span>
+                        <i class="fas fa-store"></i>
+                        Business
+                    </span>
+
+                </div>
+
+                <div class="featured-project-actions">
+
+                    <a href="https://coloursphotobooks.in/"
+                       target="_blank"
+                       rel="noopener"
+                       class="btn btn-primary btn-sm">
+
+                        VIEW PROJECT
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             PROJECT 15
+             ================================================= -->
+
+        <article class="featured-project-card">
+
+            <div class="featured-project-preview">
+
+                <iframe
+                    src="https://prime-estate-global-delta.vercel.app/"
+                    loading="lazy"
+                    title="PrimeEstate Global project preview">
+                </iframe>
+
+                <div class="featured-project-number">
+                    15
+                </div>
+
+                <div class="featured-project-category">
+                    Real Estate
+                </div>
+
+            </div>
+
+
+            <div class="featured-project-content">
+
+                <h3>
+                    PrimeEstate Global
+                </h3>
+
+                <p>
+                    Premium real-estate digital experience designed
+                    for property presentation, trust and lead
+                    generation.
+                </p>
+
+                <div class="featured-services">
+
+                    <span>
+                        <i class="fas fa-building"></i>
+                        Real Estate
+                    </span>
+
+                    <span>
+                        <i class="fas fa-gem"></i>
+                        Premium UI
+                    </span>
+
+                    <span>
+                        <i class="fas fa-chart-line"></i>
+                        Lead Generation
+                    </span>
+
+                </div>
+
+                <div class="featured-project-actions">
+
+                    <a href="https://prime-estate-global-delta.vercel.app/"
+                       target="_blank"
+                       rel="noopener"
+                       class="btn btn-primary btn-sm">
+
+                        VIEW PROJECT
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             PROJECT 16
+             ================================================= -->
+
+        <article class="featured-project-card">
+
+            <div class="featured-project-preview">
+
+                <iframe
+                    src="https://smilecove-dental.vercel.app/"
+                    loading="lazy"
+                    title="SmileCove Dental project preview">
+                </iframe>
+
+                <div class="featured-project-number">
+                    16
+                </div>
+
+                <div class="featured-project-category">
+                    Healthcare
+                </div>
+
+            </div>
+
+
+            <div class="featured-project-content">
+
+                <h3>
+                    SmileCove Dental
+                </h3>
+
+                <p>
+                    Dental studio website focused on treatment
+                    presentation, patient information and
+                    appointment conversion.
+                </p>
+
+                <div class="featured-services">
+
+                    <span>
+                        <i class="fas fa-tooth"></i>
+                        Dental
+                    </span>
+
+                    <span>
+                        <i class="fas fa-heart-pulse"></i>
+                        Healthcare
+                    </span>
+
+                    <span>
+                        <i class="fas fa-calendar-check"></i>
+                        Booking
+                    </span>
+
+                </div>
+
+                <div class="featured-project-actions">
+
+                    <a href="https://smilecove-dental.vercel.app/"
+                       target="_blank"
+                       rel="noopener"
+                       class="btn btn-primary btn-sm">
+
+                        VIEW PROJECT
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             PROJECT 17
+             ================================================= -->
+
+        <article class="featured-project-card">
+
+            <div class="featured-project-preview">
+
+                <iframe
+                    src="https://stronvex-fitness.vercel.app/"
+                    loading="lazy"
+                    title="Stronvex Fitness project preview">
+                </iframe>
+
+                <div class="featured-project-number">
+                    17
+                </div>
+
+                <div class="featured-project-category">
+                    Fitness
+                </div>
+
+            </div>
+
+
+            <div class="featured-project-content">
+
+                <h3>
+                    STRONVEX — Fitness
+                </h3>
+
+                <p>
+                    Fitness brand website built around bold visual
+                    identity, program presentation and engagement.
+                </p>
+
+                <div class="featured-services">
+
+                    <span>
+                        <i class="fas fa-dumbbell"></i>
+                        Fitness
+                    </span>
+
+                    <span>
+                        <i class="fas fa-bolt"></i>
+                        Branding
+                    </span>
+
+                    <span>
+                        <i class="fas fa-globe"></i>
+                        Web Design
+                    </span>
+
+                </div>
+
+                <div class="featured-project-actions">
+
+                    <a href="https://stronvex-fitness.vercel.app/"
+                       target="_blank"
+                       rel="noopener"
+                       class="btn btn-primary btn-sm">
+
+                        VIEW PROJECT
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             PROJECT 18
+             ================================================= -->
+
+        <article class="featured-project-card">
+
+            <div class="featured-project-preview">
+
+                <iframe
+                    src="https://my-interior-app.vercel.app/"
+                    loading="lazy"
+                    title="Aura Spaces project preview">
+                </iframe>
+
+                <div class="featured-project-number">
+                    18
+                </div>
+
+                <div class="featured-project-category">
+                    Interior
+                </div>
+
+            </div>
+
+
+            <div class="featured-project-content">
+
+                <h3>
+                    Aura Spaces — Interior Design
+                </h3>
+
+                <p>
+                    Bespoke interior and furniture experience
+                    focused on premium visual presentation and
+                    project discovery.
+                </p>
+
+                <div class="featured-services">
+
+                    <span>
+                        <i class="fas fa-couch"></i>
+                        Interior
+                    </span>
+
+                    <span>
+                        <i class="fas fa-house"></i>
+                        Home
+                    </span>
+
+                    <span>
+                        <i class="fas fa-palette"></i>
+                        Design
+                    </span>
+
+                </div>
+
+                <div class="featured-project-actions">
+
+                    <a href="https://my-interior-app.vercel.app/"
+                       target="_blank"
+                       rel="noopener"
+                       class="btn btn-primary btn-sm">
+
+                        VIEW PROJECT
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             PROJECT 19
+             ================================================= -->
+
+        <article class="featured-project-card">
+
+            <div class="featured-project-preview">
+
+                <iframe
+                    src="https://kitchen-interior-design.vercel.app/"
+                    loading="lazy"
+                    title="Kitchen Interior Design project preview">
+                </iframe>
+
+                <div class="featured-project-number">
+                    19
+                </div>
+
+                <div class="featured-project-category">
+                    Interior
+                </div>
+
+            </div>
+
+
+            <div class="featured-project-content">
+
+                <h3>
+                    Kitchen Interior Design
+                </h3>
+
+                <p>
+                    Interior design website concept created to
+                    showcase kitchen layouts, design ideas and
+                    visual inspiration.
+                </p>
+
+                <div class="featured-services">
+
+                    <span>
+                        <i class="fas fa-kitchen-set"></i>
+                        Kitchen
+                    </span>
+
+                    <span>
+                        <i class="fas fa-ruler-combined"></i>
+                        Design
+                    </span>
+
+                    <span>
+                        <i class="fas fa-images"></i>
+                        Portfolio
+                    </span>
+
+                </div>
+
+                <div class="featured-project-actions">
+
+                    <a href="https://kitchen-interior-design.vercel.app/"
+                       target="_blank"
+                       rel="noopener"
+                       class="btn btn-primary btn-sm">
+
+                        VIEW PROJECT
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             PROJECT 20
+             ================================================= -->
+
+        <article class="featured-project-card">
+
+            <div class="featured-project-preview">
+
+                <iframe
+                    src="https://home-interior-demo.vercel.app/"
+                    loading="lazy"
+                    title="Home Interior Demo project preview">
+                </iframe>
+
+                <div class="featured-project-number">
+                    20
+                </div>
+
+                <div class="featured-project-category">
+                    Interior
+                </div>
+
+            </div>
+
+
+            <div class="featured-project-content">
+
+                <h3>
+                    Home Interior Demo
+                </h3>
+
+                <p>
+                    Visual-first home interior concept designed
+                    to demonstrate a clean and premium digital
+                    presentation.
+                </p>
+
+                <div class="featured-services">
+
+                    <span>
+                        <i class="fas fa-house"></i>
+                        Home
+                    </span>
+
+                    <span>
+                        <i class="fas fa-palette"></i>
+                        Interior
+                    </span>
+
+                    <span>
+                        <i class="fas fa-layer-group"></i>
+                        UI/UX
+                    </span>
+
+                </div>
+
+                <div class="featured-project-actions">
+
+                    <a href="https://home-interior-demo.vercel.app/"
+                       target="_blank"
+                       rel="noopener"
+                       class="btn btn-primary btn-sm">
+
+                        VIEW PROJECT
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             PROJECT 21 — EXISTING WEBORA PROJECT
+             ================================================= -->
+
+        <article class="featured-project-card">
+
+            <div class="featured-project-preview">
+
+                <img
+                    src="images/d1.jpg"
+                    alt="DreamyScrunch e-commerce website">
+
+                <div class="featured-project-number">
+                    21
+                </div>
+
+                <div class="featured-project-category">
+                    E-commerce
+                </div>
+
+            </div>
+
+
+            <div class="featured-project-content">
+
+                <h3>
+                    DreamyScrunch
+                </h3>
+
+                <p>
+                    E-commerce website focused on product presentation,
+                    lead generation, branding and scalable digital growth.
+                </p>
+
+                <div class="featured-services">
+
+                    <span>
+                        <i class="fas fa-store"></i>
+                        E-commerce
+                    </span>
+
+                    <span>
+                        <i class="fas fa-paint-brush"></i>
+                        UI/UX
+                    </span>
+
+                    <span>
+                        <i class="fas fa-search"></i>
+                        SEO
+                    </span>
+
+                </div>
+
+                <div class="featured-project-actions">
+
+                    <a href="https://www.dreamyscrunch.store/"
+                       target="_blank"
+                       rel="noopener"
+                       class="btn btn-primary btn-sm">
+
+                        VIEW PROJECT
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             PROJECT 22 — EXISTING WEBORA PROJECT
+             ================================================= -->
+
+        <article class="featured-project-card">
+
+            <div class="featured-project-preview">
+
+                <img
+                    src="images/play.png"
+                    alt="Indian Bus Song App">
+
+                <div class="featured-project-number">
+                    22
+                </div>
+
+                <div class="featured-project-category">
+                    App
+                </div>
+
+            </div>
+
+
+            <div class="featured-project-content">
+
+                <h3>
+                    Indian Bus Song App
+                </h3>
+
+                <p>
+                    Mobile-friendly music application focused on
+                    music playback, database integration and a
+                    simple user experience.
+                </p>
+
+                <div class="featured-services">
+
+                    <span>
+                        <i class="fas fa-mobile-screen"></i>
+                        App Development
+                    </span>
+
+                    <span>
+                        <i class="fas fa-database"></i>
+                        Database
+                    </span>
+
+                    <span>
+                        <i class="fas fa-music"></i>
+                        Music
+                    </span>
+
+                </div>
+
+                <div class="featured-project-actions">
+
+                    <a href="https://indain-bus.vercel.app/"
+                       target="_blank"
+                       rel="noopener"
+                       class="btn btn-primary btn-sm">
+
+                        VIEW PROJECT
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             PROJECT 23 — EXISTING WEBORA PROJECT
+             ================================================= -->
+
+        <article class="featured-project-card primary-project">
+
+            <div class="featured-project-preview">
+
+                <img
+                    src="images/kamaix.png"
+                    alt="KamaiX Earning App">
+
+                <div class="featured-project-number">
+                    23
+                </div>
+
+                <div class="featured-project-category">
+                    Digital Product
+                </div>
+
+            </div>
+
+
+            <div class="featured-project-content">
+
+                <h3>
+                    KamaiX Earning App
+                </h3>
+
+                <p>
+                    A rewards and gaming-oriented digital product
+                    concept featuring user accounts, coins,
+                    activities and an application backend.
+                </p>
+
+                <div class="featured-services">
+
+                    <span>
+                        <i class="fas fa-mobile-screen"></i>
+                        App Development
+                    </span>
+
+                    <span>
+                        <i class="fas fa-database"></i>
+                        Backend
+                    </span>
+
+                    <span>
+                        <i class="fas fa-coins"></i>
+                        Rewards
+                    </span>
+
+                </div>
+
+                <div class="featured-project-actions">
+
+                    <a href="https://kamaix.vercel.app/"
+                       target="_blank"
+                       rel="noopener"
+                       class="btn btn-primary btn-sm">
+
+                        VIEW PROJECT
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             PROJECT 24 — EXISTING WEBORA PROJECT
+             ================================================= -->
+
+        <article class="featured-project-card">
+
+            <div class="featured-project-preview">
+
+                <img
+                    src="images/Ecommerce.png"
+                    alt="E-commerce Landing Page">
+
+                <div class="featured-project-number">
+                    24
+                </div>
+
+                <div class="featured-project-category">
+                    E-commerce
+                </div>
+
+            </div>
+
+
+            <div class="featured-project-content">
+
+                <h3>
+                    E-commerce Landing Page
+                </h3>
+
+                <p>
+                    Conversion-focused landing page designed
+                    for product sales, performance and a smooth
+                    customer journey.
+                </p>
+
+                <div class="featured-services">
+
+                    <span>
+                        <i class="fas fa-paint-brush"></i>
+                        UI/UX
+                    </span>
+
+                    <span>
+                        <i class="fas fa-certificate"></i>
+                        Branding
+                    </span>
+
+                    <span>
+                        <i class="fas fa-cart-shopping"></i>
+                        E-commerce
+                    </span>
+
+                </div>
+
+                <div class="featured-project-actions">
+
+                    <a href="contact.html"
+                       class="btn btn-primary btn-sm">
+
+                        START SIMILAR PROJECT
+                        <i class="fas fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             PROJECT 25 — EXISTING WEBORA PROJECT
+             ================================================= -->
+
+        <article class="featured-project-card">
+
+            <div class="featured-project-preview">
+
+                <img
+                    src="images/agency.png"
+                    alt="Digital Agency Web Application">
+
+                <div class="featured-project-number">
+                    25
+                </div>
+
+                <div class="featured-project-category">
+                    Agency
+                </div>
+
+            </div>
+
+
+            <div class="featured-project-content">
+
+                <h3>
+                    Digital Agency Web Application
+                </h3>
+
+                <p>
+                    High-performance agency website focused on
+                    lead generation, professional branding,
+                    scalability and digital growth.
+                </p>
+
+                <div class="featured-services">
+
+                    <span>
+                        <i class="fas fa-globe"></i>
+                        Web Development
+                    </span>
+
+                    <span>
+                        <i class="fas fa-paint-brush"></i>
+                        UI/UX
+                    </span>
+
+                    <span>
+                        <i class="fas fa-search"></i>
+                        SEO
+                    </span>
+
+                </div>
+
+                <div class="featured-project-actions">
+
+                    <a href="contact.html"
+                       class="btn btn-primary btn-sm">
+
+                        START SIMILAR PROJECT
+                        <i class="fas fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</div>
+
+</section><!-- =========================================================
+     STATS
+     ========================================================= --><section class="featured-stats-section"><div class="featured-stats">
+
+    <div class="featured-stat">
+
+        <strong>50+</strong>
+
+        <span>
+            Works Delivered
+        </span>
+
+    </div>
+
+
+    <div class="featured-stat">
+
+        <strong>15+</strong>
+
+        <span>
+            Team Members
+        </span>
+
+    </div>
+
+
+    <div class="featured-stat">
+
+        <strong>30+</strong>
+
+        <span>
+            Partner Teams
+        </span>
+
+    </div>
+
+</div>
+
+</section><!-- =========================================================
+     CTA
+     ========================================================= --><section class="featured-final-cta"><div class="container">
+
+    <div class="featured-label">
+        YOUR PROJECT COULD BE NEXT
+    </div>
+
+    <h2>
+        WANT YOUR PROJECT
+        TO LOOK LIKE THIS?
+    </h2>
+
+    <p>
+        Let's build a website, digital product or complete
+        digital presence designed around your goals.
+    </p>
+
+    <a href="contact.html"
+       class="btn btn-primary btn-lg">
+
+        DISCUSS YOUR PROJECT
+        <i class="fas fa-arrow-right"></i>
+
+    </a>
+
+</div>
+
+</section><!-- =========================================================
+     FOOTER
+     ========================================================= --><footer class="footer"><div class="container">
+
+    <div class="footer-grid">
+
+
+        <div class="footer-col">
+
+            <h4>QUICK LINKS</h4>
+
+            <ul>
+
+                <li>
+                    <a href="services.html">
+                        Services
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="portfolio.html">
+                        Portfolio
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="footer-col">
+
+            <h4>LEGALS</h4>
+
+            <ul>
+
+                <li>
+                    <a href="terms.html">
+                        Terms & Conditions
+                    </a>
+                </li>
+
+                <li>
+                    <a href="privacy.html">
+                        Privacy Policy
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="footer-col">
+
+            <h4>
+                Contact Details
+            </h4>
+
+            <ul>
+
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    weborastudioz@gmail.com
+                </li>
+
+                <li>
+                    <i class="fas fa-phone"></i>
+                    +6266421834
+                </li>
+
+            </ul>
+
+
+            <div class="social-links">
+
+                <a href="https://www.instagram.com/weborastudio.xyz"
+                   target="_blank"
+                   rel="noopener"
+                   aria-label="Instagram">
+
+                    <i class="fab fa-instagram"></i>
+
+                </a>
+
+
+                <a href="https://www.facebook.com/profile.php?id=61590725970278"
+                   target="_blank"
+                   rel="noopener"
+                   aria-label="Facebook">
+
+                    <i class="fab fa-facebook-f"></i>
+
+                </a>
+
+
+                <a href="https://www.linkedin.com/in/webora-studio-a975ab415"
+                   target="_blank"
+                   rel="noopener"
+                   aria-label="LinkedIn">
+
+                    <i class="fab fa-linkedin-in"></i>
+
+                </a>
+
+
+                <a href="https://x.com/weborastudioo"
+                   target="_blank"
+                   rel="noopener"
+                   aria-label="X">
+
+                    <i class="fab fa-twitter"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="footer-bottom">
+
+    <p>
+        Copyright © 2026 WEBORA Studio. All Rights Reserved.
+    </p>
+
+</div>
+
+</footer><script src="js/main.js"></script></body>
 </html>
